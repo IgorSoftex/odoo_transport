@@ -1,0 +1,11 @@
+<odoo>
+    <menuitem id="transport_deliveries_main_menu"
+              web_icon="transport_deliveries.static/description/icon.png"
+              name="Hospital" sequence="300"/>
+    <menuitem id="transport_deliveries_menu_catalog"
+              parent="transport_deliveries_main_menu"
+              name="Catalog" sequence="100"/>
+    <menuitem id="transport_deliveries_menu_settings"
+              parent="transport_deliveries_main_menu"
+              name="Settings" sequence="900"/>
+</odoo>
