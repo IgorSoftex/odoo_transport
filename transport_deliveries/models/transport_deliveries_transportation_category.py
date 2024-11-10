@@ -4,6 +4,7 @@ from odoo import models, fields, api
 class TransportDeliveriesTransportationCategory(models.Model):
     """
     This is a module for transportation categories
+    transport_deliveries_transportation_category
     """
     _name = 'transport.deliveries.transportation.category'
     _description = 'Transportation category'
@@ -13,14 +14,14 @@ class TransportDeliveriesTransportationCategory(models.Model):
     _order = 'name'
 
     name = fields.Char(
-        translate=True,
+        # translate=True,
     )
     complete_name = fields.Char(
         string='Complete Name',
         compute='_compute_complete_name',
         recursive=True,
         store=True,
-        translate=True,
+        # translate=True,
     )
     parent_id = fields.Many2one(
         comodel_name='transport.deliveries.transportation.category',
@@ -41,7 +42,7 @@ class TransportDeliveriesTransportationCategory(models.Model):
         default=True
     )
     description = fields.Text(
-        translate=True,
+        # translate=True,
     )
 
     @api.depends('name', 'parent_id.complete_name')

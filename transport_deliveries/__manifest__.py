@@ -23,6 +23,7 @@
     ],
 
     'demo': [
+    'demo/transportation_category_demo_data.xml',
     ],
 
     'installable': True,
