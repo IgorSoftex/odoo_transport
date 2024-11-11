@@ -18,6 +18,7 @@
 
     'data': [
         'security/transport_deliveries_access_groups.xml',
+        'security/transport_deliveries_rules.xml',
         'security/ir.model.access.csv',
         'views/transport_deliveries_menu.xml',
         'views/transport_deliveries_transportation_category_views.xml',

@@ -23,6 +23,14 @@ class TransportDeliveriesTransportationCategory(models.Model):
         store=True,
         # translate=True,
     )
+    type = fields.Selection(
+        default='car',
+        selection=[('car', 'Car'),
+                   ('sea', 'Sea'),
+                   ('air', 'Air'),
+                   ('railway', 'Railway'),
+                   ]
+    )
     parent_id = fields.Many2one(
         comodel_name='transport.deliveries.transportation.category',
         string='Parent Category',
