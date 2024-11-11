@@ -2,109 +2,124 @@
 <odoo>
     <data>
 
-        <record id="transportation_category_1" model="transport.deliveries.transportation.category">
+        <record id="transportation_category_16" model="transport.deliveries.transportation.category">
             <field name="name">Trucks</field>
             <field name="complete_name">Trucks</field>
+            <field name="description">By car</field>
 <!--            <field name="parent_id" ref="specialization_2"/> -->
-            <field name="parent_path">1/</field>
+            <field name="parent_path">16/</field>
         </record>
 
-        <record id="transportation_category_2" model="transport.deliveries.transportation.category">
+        <record id="transportation_category_17" model="transport.deliveries.transportation.category">
             <field name="name">Heavy trucks</field>
             <field name="complete_name">Trucks / Heavy trucks</field>
-            <field name="parent_id" ref="transportation_category_1"/>
-            <field name="parent_path">1/2//</field>
+            <field name="description">By car</field>
+            <field name="parent_id" ref="transportation_category_16"/>
+            <field name="parent_path">16/17/</field>
         </record>
 
-        <record id="transportation_category_3" model="transport.deliveries.transportation.category">
+        <record id="transportation_category_18" model="transport.deliveries.transportation.category">
             <field name="name">Medium trucks</field>
             <field name="complete_name">Trucks / Medium trucks</field>
-            <field name="parent_id" ref="transportation_category_1"/>
-            <field name="parent_path">1/2//</field>
+            <field name="description">By car</field>
+            <field name="parent_id" ref="transportation_category_16"/>
+            <field name="parent_path">16/18/</field>
         </record>
 
-        <record id="transportation_category_4" model="transport.deliveries.transportation.category">
+        <record id="transportation_category_19" model="transport.deliveries.transportation.category">
             <field name="name">Light trucks</field>
             <field name="complete_name">Trucks / Light trucks</field>
-            <field name="parent_id" ref="transportation_category_1"/>
-            <field name="parent_path">1/2//</field>
+            <field name="description">By car</field>
+            <field name="parent_id" ref="transportation_category_16"/>
+            <field name="parent_path">16/19/</field>
         </record>
 
-        <record id="transportation_category_5" model="transport.deliveries.transportation.category">
+        <record id="transportation_category_20" model="transport.deliveries.transportation.category">
             <field name="name">Special trucks</field>
             <field name="complete_name">Trucks / Special trucks</field>
-            <field name="parent_id" ref="transportation_category_1"/>
-            <field name="parent_path">1/2//</field>
+            <field name="description">By car</field>
+            <field name="parent_id" ref="transportation_category_16"/>
+            <field name="parent_path">16/20/</field>
         </record>
 
-        <record id="transportation_category_6" model="transport.deliveries.transportation.category">
+        <record id="transportation_category_21" model="transport.deliveries.transportation.category">
             <field name="name">Railway</field>
             <field name="complete_name">Railway</field>
+            <field name="description">By railway</field>
 <!--            <field name="parent_id" ref="specialization_2"/> -->
-            <field name="parent_path">2/</field>
+            <field name="parent_path">21/</field>
         </record>
 
-        <record id="transportation_category_7" model="transport.deliveries.transportation.category">
+        <record id="transportation_category_22" model="transport.deliveries.transportation.category">
             <field name="name">Bulk wagons</field>
             <field name="complete_name">Railway / Bulk wagons</field>
-            <field name="parent_id" ref="transportation_category_6"/>
-            <field name="parent_path">2/2//</field>
+            <field name="description">By railway</field>
+            <field name="parent_id" ref="transportation_category_21"/>
+            <field name="parent_path">21/22/</field>
         </record>
 
-        <record id="transportation_category_8" model="transport.deliveries.transportation.category">
+        <record id="transportation_category_23" model="transport.deliveries.transportation.category">
             <field name="name">Tank wagons</field>
             <field name="complete_name">Railway / Tank wagons</field>
-            <field name="parent_id" ref="transportation_category_6"/>
-            <field name="parent_path">2/2//</field>
+            <field name="description">By railway</field>
+            <field name="parent_id" ref="transportation_category_21"/>
+            <field name="parent_path">21/23/</field>
         </record>
 
-        <record id="transportation_category_9" model="transport.deliveries.transportation.category">
+        <record id="transportation_category_24" model="transport.deliveries.transportation.category">
             <field name="name">Platform wagons</field>
             <field name="complete_name">Railway / Platform wagons</field>
-            <field name="parent_id" ref="transportation_category_6"/>
-            <field name="parent_path">2/2//</field>
+            <field name="description">By railway</field>
+            <field name="parent_id" ref="transportation_category_21"/>
+            <field name="parent_path">21/24/</field>
         </record>
 
-        <record id="transportation_category_10" model="transport.deliveries.transportation.category">
+        <record id="transportation_category_25" model="transport.deliveries.transportation.category">
             <field name="name">Airplanes</field>
             <field name="complete_name">Airplanes</field>
+            <field name="description">By air</field>
 <!--            <field name="parent_id" ref="specialization_2"/> -->
-            <field name="parent_path">3/</field>
+            <field name="parent_path">25/</field>
         </record>
 
-        <record id="transportation_category_11" model="transport.deliveries.transportation.category">
+        <record id="transportation_category_26" model="transport.deliveries.transportation.category">
             <field name="name">Heavy airplane</field>
             <field name="complete_name">Airplanes / Heavy airplane</field>
-            <field name="parent_id" ref="transportation_category_10"/>
-            <field name="parent_path">2/2//</field>
+            <field name="description">By air</field>
+            <field name="parent_id" ref="transportation_category_25"/>
+            <field name="parent_path">25/26/</field>
         </record>
 
-        <record id="transportation_category_12" model="transport.deliveries.transportation.category">
+        <record id="transportation_category_27" model="transport.deliveries.transportation.category">
             <field name="name">Medium airplane</field>
             <field name="complete_name">Airplanes / Medium airplane</field>
-            <field name="parent_id" ref="transportation_category_10"/>
-            <field name="parent_path">2/2//</field>
+            <field name="description">By air</field>
+            <field name="parent_id" ref="transportation_category_25"/>
+            <field name="parent_path">25/27/</field>
         </record>
 
-        <record id="transportation_category_13" model="transport.deliveries.transportation.category">
+        <record id="transportation_category_28" model="transport.deliveries.transportation.category">
             <field name="name">Ships</field>
             <field name="complete_name">Ships</field>
+            <field name="description">By sea</field>
 <!--            <field name="parent_id" ref="specialization_2"/> -->
-            <field name="parent_path">4/</field>
+            <field name="parent_path">28/</field>
         </record>
 
-        <record id="transportation_category_14" model="transport.deliveries.transportation.category">
+        <record id="transportation_category_29" model="transport.deliveries.transportation.category">
             <field name="name">Dry bulk ship</field>
             <field name="complete_name">Ships / Dry bulk ship</field>
-            <field name="parent_id" ref="transportation_category_13"/>
-            <field name="parent_path">3/2//</field>
+            <field name="description">By sea</field>
+            <field name="parent_id" ref="transportation_category_28"/>
+            <field name="parent_path">28/29/</field>
         </record>
 
-        <record id="transportation_category_15" model="transport.deliveries.transportation.category">
+        <record id="transportation_category_30" model="transport.deliveries.transportation.category">
             <field name="name">Tanker</field>
             <field name="complete_name">Ships / Tanker</field>
-            <field name="parent_id" ref="transportation_category_13"/>
-            <field name="parent_path">3/2//</field>
+            <field name="description">By sea</field>
+            <field name="parent_id" ref="transportation_category_28"/>
+            <field name="parent_path">28/30/</field>
         </record>
 
     </data>

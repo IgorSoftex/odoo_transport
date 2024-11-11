@@ -1,5 +1,5 @@
 {
-    'name': 'Automation of transport deliveries in Odoo',
+    'name': 'Transportation deliveries',
     'description': "Module for ordering of transport deliveries",
     'summary': "Odoo module for automation of transport deliveries",
     'version': '17.0.1.0.0',
