@@ -3,7 +3,7 @@ from odoo import models, fields, api
 
 class TransportDeliveriesTransportationCategory(models.Model):
     """
-    This is a module for transportation categories
+    This is a model for transportation categories
     transport_deliveries_transportation_category
     """
     _name = 'transport.deliveries.transportation.category'
@@ -14,6 +14,7 @@ class TransportDeliveriesTransportationCategory(models.Model):
     _order = 'name'
 
     name = fields.Char(
+        size=100,
         # translate=True,
     )
     complete_name = fields.Char(

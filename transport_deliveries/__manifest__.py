@@ -22,10 +22,14 @@
         'security/ir.model.access.csv',
         'views/transport_deliveries_menu.xml',
         'views/transport_deliveries_transportation_category_views.xml',
+        'views/transport_deliveries_transport_views.xml',
+        'views/transport_deliveries_vehicle_brand_views.xml',
     ],
 
     'demo': [
+    'demo/vehicle_brand_demo_data.xml',
     'demo/transportation_category_demo_data.xml',
+    'demo/transport_demo_data.xml',
     ],
 
     'installable': True,

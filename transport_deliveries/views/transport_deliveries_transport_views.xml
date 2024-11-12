@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="transport_deliveries_transport_tree" model="ir.ui.view">
+        <field name="name">transport.deliveries.transport.tree</field>
+        <field name="model">transport.deliveries.transport</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="category_id"/>
+<!--                <field name="full_name"/> -->
+                <field name="name"/>
+                <field name="registration_number"/>
+                <field name="vehicle_brand_id"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+    <record id="transport_deliveries_transport_form" model="ir.ui.view">
+        <field name="name">transport.deliveries.transport.form</field>
+        <field name="model">transport.deliveries.transport</field>
+        <field name="arch" type="xml">
+            <form>
+                <header></header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="registration_number"/>
+                            <field name="vehicle_brand_id"/>
+                        </group>
+                        <group>
+                            <field name="category_id"/>
+                            <field name="description"/>
+                            <field name="picture"
+                                   widget="image"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_transport_deliveries_transport_window" model="ir.actions.act_window">
+        <field name="name">Transport</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">transport.deliveries.transport</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="transport_deliveries_menu_transport"
+              action="action_transport_deliveries_transport_window"
+              parent="transport_deliveries_menu_catalog"
+              name="Transport" sequence="200"/>
+</odoo>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="vehicle_brand_1" model="transport.deliveries.vehicle.brand">
+            <field name="name">Mercedes-Benz</field>
+            <field name="description">Premium brand</field>
+        </record>
+
+        <record id="vehicle_brand_2" model="transport.deliveries.vehicle.brand">
+            <field name="name">Man</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="vehicle_brand_3" model="transport.deliveries.vehicle.brand">
+            <field name="name">Volvo</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="vehicle_brand_4" model="transport.deliveries.vehicle.brand">
+            <field name="name">Iveco</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="vehicle_brand_5" model="transport.deliveries.vehicle.brand">
+            <field name="name">Scania</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="vehicle_brand_6" model="transport.deliveries.vehicle.brand">
+            <field name="name">DAF</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="vehicle_brand_7" model="transport.deliveries.vehicle.brand">
+            <field name="name">Renault</field>
+            <field name="description"></field>
+        </record>
+
+    </data>
+</odoo>
