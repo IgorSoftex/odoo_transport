@@ -21,8 +21,8 @@
         'security/transport_deliveries_rules.xml',
         'security/ir.model.access.csv',
         'views/transport_deliveries_menu.xml',
-        'views/transport_deliveries_transportation_category_views.xml',
         'views/transport_deliveries_transport_views.xml',
+        'views/transport_deliveries_transportation_category_views.xml',
         'views/transport_deliveries_vehicle_brand_views.xml',
     ],
 

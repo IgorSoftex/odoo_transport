@@ -34,5 +34,5 @@
     <menuitem id="transport_deliveries_menu_vehicle_brand"
               action="action_transport_deliveries_vehicle_brand_window"
               parent="transport_deliveries_menu_catalog"
-              name="Vehicle brands" sequence="200"/>
+              name="Vehicle brands" sequence="300"/>
 </odoo>

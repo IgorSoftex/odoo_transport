@@ -10,23 +10,23 @@ class TransportDeliveriesTransportationCategory(models.Model):
     _description = 'Transportation category'
     _parent_name = "parent_id"
     _parent_store = True
-    # _rec_name = 'complete_name'
+    _rec_name = 'full_name'
     _order = 'name'
 
     name = fields.Char(
         size=100,
         # translate=True,
     )
-    complete_name = fields.Char(
+    full_name = fields.Char(
         string='Complete Name',
-        compute='_compute_complete_name',
+        compute='_compute_full_name',
         recursive=True,
         store=True,
         # translate=True,
     )
     type = fields.Selection(
         default='car',
-        selection=[('car', 'Car'),
+        selection=[('car', 'Truck'),
                    ('sea', 'Sea'),
                    ('air', 'Air'),
                    ('railway', 'Railway'),
@@ -54,16 +54,16 @@ class TransportDeliveriesTransportationCategory(models.Model):
         # translate=True,
     )
 
-    @api.depends('name', 'parent_id.complete_name')
-    def _compute_complete_name(self):
+    @api.depends('name', 'parent_id.full_name')
+    def _compute_full_name(self):
         """
         This method computes a complete name
         """
         for record in self:
             if record.parent_id:
-                record.complete_name = '%s / %s' % (
-                    record.parent_id.complete_name,
+                record.full_name = '%s / %s' % (
+                    record.parent_id.full_name,
                     record.name
                 )
             else:
-                record.complete_name = record.name
+                record.full_name = record.name

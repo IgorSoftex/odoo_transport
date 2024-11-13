@@ -6,8 +6,9 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="category_id"/>
+<!--                <field name="category_id.full_name"/> -->
 <!--                <field name="full_name"/> -->
-                <field name="name"/>
+<!--                <field name="name"/> -->
                 <field name="registration_number"/>
                 <field name="vehicle_brand_id"/>
                 <field name="description"/>
@@ -47,5 +48,5 @@
     <menuitem id="transport_deliveries_menu_transport"
               action="action_transport_deliveries_transport_window"
               parent="transport_deliveries_menu_catalog"
-              name="Transport" sequence="200"/>
+              name="Transport" sequence="100"/>
 </odoo>

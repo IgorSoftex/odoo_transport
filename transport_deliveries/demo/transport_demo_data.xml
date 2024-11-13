@@ -2,6 +2,8 @@
 <odoo>
     <data>
 
+<!-- Trucks -->
+
         <record id="transport_1_1" model="transport.deliveries.transport">
             <field name="name">Mercedes-Benz Actros</field>
             <field name="category_id" ref="transportation_category_17"/>
@@ -152,6 +154,98 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_6"/>
             <field name="description"></field>
             <field name="registration_number">CC 7777 CC</field>
+        </record>
+
+<!-- Railway -->
+
+        <record id="transport_7_1" model="transport.deliveries.transport">
+            <field name="name">Big bulk wagon</field>
+            <field name="category_id" ref="transportation_category_22"/>
+<!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
+            <field name="description"></field>
+            <field name="registration_number">Wagon 01-00-55</field>
+        </record>
+
+        <record id="transport_7_2" model="transport.deliveries.transport">
+            <field name="name">Big bulk wagon</field>
+            <field name="category_id" ref="transportation_category_22"/>
+<!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
+            <field name="description"></field>
+            <field name="registration_number">Wagon 01-11-22</field>
+        </record>
+
+        <record id="transport_7_3" model="transport.deliveries.transport">
+            <field name="name">Medium bulk wagon</field>
+            <field name="category_id" ref="transportation_category_23"/>
+<!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
+            <field name="description"></field>
+            <field name="registration_number">Wagon 22-00-65</field>
+        </record>
+
+        <record id="transport_7_4" model="transport.deliveries.transport">
+            <field name="name">Medium bulk wagon</field>
+            <field name="category_id" ref="transportation_category_23"/>
+<!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
+            <field name="description"></field>
+            <field name="registration_number">Wagon 25-45-00</field>
+        </record>
+
+        <record id="transport_7_5" model="transport.deliveries.transport">
+            <field name="name">Medium bulk wagon</field>
+            <field name="category_id" ref="transportation_category_23"/>
+<!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
+            <field name="description"></field>
+            <field name="registration_number">Wagon 30-11-12</field>
+        </record>
+
+<!-- Ships -->
+
+        <record id="transport_8_1" model="transport.deliveries.transport">
+            <field name="name">Dry bulk ship big container</field>
+            <field name="category_id" ref="transportation_category_30"/>
+<!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
+            <field name="description"></field>
+            <field name="registration_number">Container 200-120</field>
+        </record>
+
+        <record id="transport_8_2" model="transport.deliveries.transport">
+            <field name="name">Dry bulk ship big container</field>
+            <field name="category_id" ref="transportation_category_30"/>
+<!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
+            <field name="description"></field>
+            <field name="registration_number">Container 220-000</field>
+        </record>
+
+        <record id="transport_8_3" model="transport.deliveries.transport">
+            <field name="name">Dry bulk ship big container</field>
+            <field name="category_id" ref="transportation_category_30"/>
+<!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
+            <field name="description"></field>
+            <field name="registration_number">Container 444-000</field>
+        </record>
+
+        <record id="transport_8_4" model="transport.deliveries.transport">
+            <field name="name">Dry bulk ship big container</field>
+            <field name="category_id" ref="transportation_category_30"/>
+<!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
+            <field name="description"></field>
+            <field name="registration_number">Container 188-111</field>
+        </record>
+
+        <record id="transport_8_5" model="transport.deliveries.transport">
+            <field name="name">Dry bulk ship big container</field>
+            <field name="category_id" ref="transportation_category_30"/>
+<!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
+            <field name="description"></field>
+            <field name="registration_number">Container 355-888</field>
+        </record>
+
+        <record id="transport_8_6" model="transport.deliveries.transport">
+            <field name="name">Dry bulk ship big container</field>
+            <field name="category_id" ref="transportation_category_30"/>
+<!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
+            <field name="description"></field>
+            <field name="registration_number">Container 001-777</field>
         </record>
 
     </data>
