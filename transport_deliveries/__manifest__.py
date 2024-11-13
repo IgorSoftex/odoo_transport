@@ -24,6 +24,7 @@
         'views/transport_deliveries_transport_views.xml',
         'views/transport_deliveries_transportation_category_views.xml',
         'views/transport_deliveries_vehicle_brand_views.xml',
+        'views/transport_deliveries_carrier_views.xml',
     ],
 
     'demo': [

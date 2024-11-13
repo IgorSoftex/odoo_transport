@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
     <record id="transport_deliveries_transportation_category_tree" model="ir.ui.view">
         <field name="name">transport.deliveries.transportation.category.tree</field>
         <field name="model">transport.deliveries.transportation.category</field>
@@ -12,6 +13,7 @@
             </tree>
         </field>
     </record>
+
     <record id="transport_deliveries_transportation_category_form" model="ir.ui.view">
         <field name="name">transport.deliveries.transportation.category.form</field>
         <field name="model">transport.deliveries.transportation.category</field>
@@ -33,14 +35,17 @@
             </form>
         </field>
     </record>
+
     <record id="action_transport_deliveries_transportation_category_window" model="ir.actions.act_window">
         <field name="name">Transportation Category</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">transport.deliveries.transportation.category</field>
         <field name="view_mode">tree,form</field>
     </record>
+
     <menuitem id="transport_deliveries_menu_transportation_category"
               action="action_transport_deliveries_transportation_category_window"
               parent="transport_deliveries_menu_catalog"
               name="Transportation Category" sequence="200"/>
+
 </odoo>
