@@ -13,7 +13,7 @@
     </record>
 
     <record id="group_transport_deliveries_car_manager" model="res.groups">
-        <field name="name">Car manager</field>
+        <field name="name">Vehicle manager</field>
         <field name="category_id" ref="transport_deliveries.module_category_transport_deliveries"/>
         <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
     </record>

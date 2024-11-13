@@ -13,6 +13,7 @@ class TransportDeliveriesTransport(models.Model):
     name = fields.Char(
         help='Name',
         size=100,
+        required=True,
         # translate=True,
     )
     full_name = fields.Char(
@@ -25,11 +26,12 @@ class TransportDeliveriesTransport(models.Model):
         comodel_name='transport.deliveries.transportation.category',
         string='Category',
         index=True,
+        required=True,
         # ondelete='cascade',
     )
     vehicle_brand_id = fields.Many2one(
         comodel_name='transport.deliveries.vehicle.brand',
-        string='Vehicle brand',
+        string='Brand',
         index=True,
         # ondelete='cascade',
     )
@@ -46,6 +48,16 @@ class TransportDeliveriesTransport(models.Model):
         size=40,
         help='Registration number',
         # translate=True,
+    )
+    cargo_volume = fields.Integer(
+        string='Cargo volume (cubic meters)',
+        # required=True,
+        # default=2,
+    )
+    cargo_weight = fields.Integer(
+        string='Cargo weight (kg)',
+        # required=True,
+        # default=2,
     )
     active = fields.Boolean(
         default=True,

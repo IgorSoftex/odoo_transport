@@ -13,6 +13,7 @@ class TransportDeliveriesVehicleBrand(models.Model):
     name = fields.Char(
         size=100,
         help='Name',
+        required=True,
         # translate=True,
     )
     description = fields.Text(

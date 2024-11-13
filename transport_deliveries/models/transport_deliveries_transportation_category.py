@@ -10,11 +10,12 @@ class TransportDeliveriesTransportationCategory(models.Model):
     _description = 'Transportation category'
     _parent_name = "parent_id"
     _parent_store = True
-    _rec_name = 'full_name'
+    # _rec_name = 'full_name'
     _order = 'name'
 
     name = fields.Char(
         size=100,
+        required=True,
         # translate=True,
     )
     full_name = fields.Char(
@@ -30,7 +31,8 @@ class TransportDeliveriesTransportationCategory(models.Model):
                    ('sea', 'Sea'),
                    ('air', 'Air'),
                    ('railway', 'Railway'),
-                   ]
+                   ],
+        required=True,
     )
     parent_id = fields.Many2one(
         comodel_name='transport.deliveries.transportation.category',
