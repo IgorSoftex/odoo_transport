@@ -10,7 +10,7 @@ class TransportDeliveriesCarrier(models.Model):
     _description = 'Carriers'
 
     is_carrier = fields.Boolean(
-        string="Carrier",
+        string="Is Carrier",
         help="The partner is a carrier",
         default=False,
         required=True,
