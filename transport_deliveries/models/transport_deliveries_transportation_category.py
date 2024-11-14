@@ -49,11 +49,21 @@ class TransportDeliveriesTransportationCategory(models.Model):
         inverse_name='parent_id',
         string='Child Category',
     )
-    active = fields.Boolean(
-        default=True
-    )
     description = fields.Text(
         # translate=True,
+    )
+    cargo_volume = fields.Integer(
+        string='Cargo volume (cubic meters)',
+        # required=True,
+        # default=2,
+    )
+    cargo_weight = fields.Integer(
+        string='Cargo weight (kg)',
+        # required=True,
+        # default=2,
+    )
+    active = fields.Boolean(
+        default=True
     )
 
     @api.depends('name', 'parent_id.full_name')

@@ -49,16 +49,6 @@ class TransportDeliveriesTransport(models.Model):
         help='Registration number',
         # translate=True,
     )
-    cargo_volume = fields.Integer(
-        string='Cargo volume (cubic meters)',
-        # required=True,
-        # default=2,
-    )
-    cargo_weight = fields.Integer(
-        string='Cargo weight (kg)',
-        # required=True,
-        # default=2,
-    )
     active = fields.Boolean(
         default=True,
     )

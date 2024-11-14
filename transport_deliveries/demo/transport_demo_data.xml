@@ -10,8 +10,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_1"/>
             <field name="description">Good car</field>
             <field name="registration_number">AA 4548 CA</field>
-            <field name="cargo_volume">36</field>
-            <field name="cargo_weight">40</field>
         </record>
 
         <record id="transport_1_2" model="transport.deliveries.transport">
@@ -20,8 +18,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_1"/>
             <field name="description">Good car</field>
             <field name="registration_number">KA 1245 DA</field>
-            <field name="cargo_volume">36</field>
-            <field name="cargo_weight">40</field>
         </record>
 
         <record id="transport_1_3" model="transport.deliveries.transport">
@@ -30,8 +26,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_1"/>
             <field name="description"></field>
             <field name="registration_number">AI 5588 IA</field>
-            <field name="cargo_volume">38</field>
-            <field name="cargo_weight">42</field>
         </record>
 
         <record id="transport_2_1" model="transport.deliveries.transport">
@@ -40,8 +34,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_2"/>
             <field name="description">Reliable vehicle</field>
             <field name="registration_number">CB 0014 MM</field>
-            <field name="cargo_volume">22</field>
-            <field name="cargo_weight">20</field>
         </record>
 
         <record id="transport_2_2" model="transport.deliveries.transport">
@@ -50,8 +42,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_2"/>
             <field name="description">Nice vehicle</field>
             <field name="registration_number">XA 2589 CA</field>
-            <field name="cargo_volume">38</field>
-            <field name="cargo_weight">36</field>
         </record>
 
         <record id="transport_3_1" model="transport.deliveries.transport">
@@ -60,8 +50,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_3"/>
             <field name="description">Safe vehicle</field>
             <field name="registration_number">XA 1133 CA</field>
-            <field name="cargo_volume">38</field>
-            <field name="cargo_weight">36</field>
         </record>
 
         <record id="transport_3_2" model="transport.deliveries.transport">
@@ -70,8 +58,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_3"/>
             <field name="description">Safe vehicle</field>
             <field name="registration_number">AA 8811 BA</field>
-            <field name="cargo_volume">38</field>
-            <field name="cargo_weight">36</field>
         </record>
 
         <record id="transport_3_3" model="transport.deliveries.transport">
@@ -80,8 +66,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_3"/>
             <field name="description"></field>
             <field name="registration_number">AA 8822 BA</field>
-            <field name="cargo_volume">38</field>
-            <field name="cargo_weight">36</field>
         </record>
 
         <record id="transport_3_4" model="transport.deliveries.transport">
@@ -90,8 +74,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_3"/>
             <field name="description">Big vehicle</field>
             <field name="registration_number">AA 7367 EA</field>
-            <field name="cargo_volume">38</field>
-            <field name="cargo_weight">36</field>
         </record>
 
         <record id="transport_3_5" model="transport.deliveries.transport">
@@ -100,8 +82,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_3"/>
             <field name="description">Big vehicle</field>
             <field name="registration_number">AI 3390 AA</field>
-            <field name="cargo_volume">38</field>
-            <field name="cargo_weight">36</field>
         </record>
 
         <record id="transport_4_1" model="transport.deliveries.transport">
@@ -110,8 +90,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_4"/>
             <field name="description"></field>
             <field name="registration_number">AI 3389 AA</field>
-            <field name="cargo_volume">34</field>
-            <field name="cargo_weight">30</field>
         </record>
 
         <record id="transport_4_2" model="transport.deliveries.transport">
@@ -120,8 +98,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_4"/>
             <field name="description"></field>
             <field name="registration_number">AA 3371 AA</field>
-            <field name="cargo_volume">34</field>
-            <field name="cargo_weight">30</field>
         </record>
 
         <record id="transport_4_3" model="transport.deliveries.transport">
@@ -130,8 +106,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_4"/>
             <field name="description"></field>
             <field name="registration_number">CB 0011 BC</field>
-            <field name="cargo_volume">34</field>
-            <field name="cargo_weight">30</field>
         </record>
 
         <record id="transport_5_1" model="transport.deliveries.transport">
@@ -140,8 +114,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_5"/>
             <field name="description"></field>
             <field name="registration_number">CB 6614 BC</field>
-            <field name="cargo_volume">36</field>
-            <field name="cargo_weight">36</field>
         </record>
 
         <record id="transport_5_2" model="transport.deliveries.transport">
@@ -150,8 +122,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_5"/>
             <field name="description"></field>
             <field name="registration_number">CB 8812 BC</field>
-            <field name="cargo_volume">36</field>
-            <field name="cargo_weight">36</field>
         </record>
 
         <record id="transport_5_3" model="transport.deliveries.transport">
@@ -160,8 +130,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_5"/>
             <field name="description"></field>
             <field name="registration_number">CC 9812 CC</field>
-            <field name="cargo_volume">36</field>
-            <field name="cargo_weight">36</field>
         </record>
 
         <record id="transport_6_1" model="transport.deliveries.transport">
@@ -170,8 +138,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_6"/>
             <field name="description"></field>
             <field name="registration_number">CC 8723 CC</field>
-            <field name="cargo_volume">22</field>
-            <field name="cargo_weight">24</field>
         </record>
 
         <record id="transport_6_2" model="transport.deliveries.transport">
@@ -180,8 +146,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_6"/>
             <field name="description"></field>
             <field name="registration_number">CC 1422 CC</field>
-            <field name="cargo_volume">22</field>
-            <field name="cargo_weight">24</field>
         </record>
 
         <record id="transport_6_3" model="transport.deliveries.transport">
@@ -190,8 +154,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_6"/>
             <field name="description"></field>
             <field name="registration_number">CC 7777 CC</field>
-            <field name="cargo_volume">22</field>
-            <field name="cargo_weight">24</field>
         </record>
 
         <record id="transport_6_4" model="transport.deliveries.transport">
@@ -200,8 +162,6 @@
             <field name="vehicle_brand_id" ref="vehicle_brand_6"/>
             <field name="description"></field>
             <field name="registration_number">AK 1196 PP</field>
-            <field name="cargo_volume">28</field>
-            <field name="cargo_weight">26</field>
         </record>
 
 <!-- Railway -->
@@ -212,8 +172,6 @@
 <!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
             <field name="description"></field>
             <field name="registration_number">Wagon 01-00-55</field>
-            <field name="cargo_volume">200</field>
-            <field name="cargo_weight">220</field>
         </record>
 
         <record id="transport_7_2" model="transport.deliveries.transport">
@@ -222,8 +180,6 @@
 <!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
             <field name="description"></field>
             <field name="registration_number">Wagon 01-11-22</field>
-            <field name="cargo_volume">200</field>
-            <field name="cargo_weight">220</field>
         </record>
 
         <record id="transport_7_3" model="transport.deliveries.transport">
@@ -232,8 +188,6 @@
 <!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
             <field name="description"></field>
             <field name="registration_number">Wagon 22-00-65</field>
-            <field name="cargo_volume">180</field>
-            <field name="cargo_weight">190</field>
         </record>
 
         <record id="transport_7_4" model="transport.deliveries.transport">
@@ -242,8 +196,6 @@
 <!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
             <field name="description"></field>
             <field name="registration_number">Wagon 25-45-00</field>
-            <field name="cargo_volume">180</field>
-            <field name="cargo_weight">190</field>
         </record>
 
         <record id="transport_7_5" model="transport.deliveries.transport">
@@ -252,8 +204,6 @@
 <!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
             <field name="description"></field>
             <field name="registration_number">Wagon 30-11-12</field>
-            <field name="cargo_volume">180</field>
-            <field name="cargo_weight">190</field>
         </record>
 
 <!-- Ships -->
@@ -264,8 +214,6 @@
 <!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
             <field name="description"></field>
             <field name="registration_number">Container 200-120</field>
-            <field name="cargo_volume">16</field>
-            <field name="cargo_weight">14</field>
         </record>
 
         <record id="transport_8_2" model="transport.deliveries.transport">
@@ -274,8 +222,6 @@
 <!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
             <field name="description"></field>
             <field name="registration_number">Container 220-000</field>
-            <field name="cargo_volume">16</field>
-            <field name="cargo_weight">14</field>
         </record>
 
         <record id="transport_8_3" model="transport.deliveries.transport">
@@ -284,8 +230,6 @@
 <!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
             <field name="description"></field>
             <field name="registration_number">Container 444-000</field>
-            <field name="cargo_volume">16</field>
-            <field name="cargo_weight">14</field>
         </record>
 
         <record id="transport_8_4" model="transport.deliveries.transport">
@@ -294,8 +238,6 @@
 <!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
             <field name="description"></field>
             <field name="registration_number">Container 188-111</field>
-            <field name="cargo_volume">16</field>
-            <field name="cargo_weight">14</field>
         </record>
 
         <record id="transport_8_5" model="transport.deliveries.transport">
@@ -304,8 +246,6 @@
 <!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
             <field name="description"></field>
             <field name="registration_number">Container 355-888</field>
-            <field name="cargo_volume">16</field>
-            <field name="cargo_weight">14</field>
         </record>
 
         <record id="transport_8_6" model="transport.deliveries.transport">
@@ -314,8 +254,6 @@
 <!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
             <field name="description"></field>
             <field name="registration_number">Container 001-777</field>
-            <field name="cargo_volume">16</field>
-            <field name="cargo_weight">14</field>
         </record>
 
 <!-- Airplanes -->
@@ -326,8 +264,6 @@
 <!--            <field name="vehicle_brand_id" ref="vehicle_brand_6"/> -->
             <field name="description"></field>
             <field name="registration_number">Air 228-008-110</field>
-            <field name="cargo_volume">240</field>
-            <field name="cargo_weight">200</field>
         </record>
 
     </data>

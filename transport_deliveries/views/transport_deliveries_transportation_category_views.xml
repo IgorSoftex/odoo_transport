@@ -25,6 +25,8 @@
                         <group>
                             <field name="name"/>
                             <field name="parent_id"/>
+                            <field name="cargo_volume"/>
+                            <field name="cargo_weight"/>
                         </group>
                         <group>
                             <field name="type" widget="radio"/>

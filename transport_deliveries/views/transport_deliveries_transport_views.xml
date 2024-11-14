@@ -23,12 +23,10 @@
                         <group>
                             <field name="name"/>
                             <field name="registration_number"/>
-                            <field name="cargo_volume"/>
-                            <field name="cargo_weight"/>
-                        </group>
-                        <group>
                             <field name="category_id"/>
                             <field name="vehicle_brand_id"/>
+                        </group>
+                        <group>
                             <field name="description"/>
                             <field name="picture"
                                    widget="image"/>
