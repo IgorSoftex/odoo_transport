@@ -25,6 +25,7 @@
         'views/transport_deliveries_transportation_category_views.xml',
         'views/transport_deliveries_vehicle_brand_views.xml',
         'views/transport_deliveries_carrier_views.xml',
+        'views/transport_deliveries_carrier_contact_person_views.xml',
     ],
 
     'demo': [
@@ -32,6 +33,7 @@
     'demo/transportation_category_demo_data.xml',
     'demo/transport_demo_data.xml',
     'demo/carrier_demo_data.xml',
+    'demo/carrier_contact_person_demo_data.xml',
     ],
 
     'installable': True,

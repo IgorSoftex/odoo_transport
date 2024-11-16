@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="transport_deliveries_contact_person_1" model="res.partner">
+            <field name="name">Peter Jonson (European Transport Company)</field>
+            <field name="complete_name">Peter Jonson (European Transport Company)</field>
+            <field name="commercial_company_name">Peter Jonson (European Transport Company)</field>
+            <field name="industry_id">8</field>
+            <field name="lang">uk_UA</field>
+            <field name="vat">85236975</field>
+            <field name="commercial_partner_id">64</field>
+            <field name="type">contact</field>
+            <field name="street">Kharkiv, Nezaleznosti street, 30</field>
+            <field name="email">peter_jonson_european_transport_company@ukr.net</field>
+            <field name="email_normalized">peter_jonson_european_transport_company@ukr.net</field>
+            <field name="phone">134-000-888</field>
+            <field name="mobile">096-111-581-00</field>
+            <field name="is_company">False</field>
+            <field name="partner_share">True</field>
+            <field name="partner_gid">0</field>
+            <field name="invoice_warn">no-message</field>
+            <field name="sale_warn">no-message</field>
+            <field name="supplier_rank">0</field>
+            <field name="customer_rank">0</field>
+            <field name="is_carrier">False</field>
+            <field name="is_carrier_contact_person">True</field>
+        </record>
+
+        <record id="transport_deliveries_contact_person_2" model="res.partner">
+            <field name="name">Alex Pit (European Transport Company)</field>
+            <field name="complete_name">Alex Pit (European Transport Company)</field>
+            <field name="commercial_company_name">Alex Pit (European Transport Company)</field>
+            <field name="industry_id">8</field>
+            <field name="lang">uk_UA</field>
+            <field name="vat">224567890</field>
+            <field name="commercial_partner_id">64</field>
+            <field name="type">contact</field>
+            <field name="street">Lviv, Bandery street, 18</field>
+            <field name="email">alex_pit_european_transport_company@ukr.net</field>
+            <field name="email_normalized">alex_pit_european_transport_company@ukr.net</field>
+            <field name="phone">555-156-666</field>
+            <field name="mobile">096-888-346-45</field>
+            <field name="is_company">False</field>
+            <field name="partner_share">True</field>
+            <field name="partner_gid">0</field>
+            <field name="invoice_warn">no-message</field>
+            <field name="sale_warn">no-message</field>
+            <field name="supplier_rank">0</field>
+            <field name="customer_rank">0</field>
+            <field name="is_carrier">False</field>
+            <field name="is_carrier_contact_person">True</field>
+        </record>
+
+        <record id="transport_deliveries_contact_person_3" model="res.partner">
+            <field name="name">Fridrih Engels (The Best Transport Company)</field>
+            <field name="complete_name">Fridrih Engels (The Best Transport Company)</field>
+            <field name="commercial_company_name">Fridrih Engels (The Best Transport Company)</field>
+            <field name="industry_id">8</field>
+            <field name="lang">uk_UA</field>
+            <field name="vat">56110066</field>
+            <field name="commercial_partner_id">64</field>
+            <field name="type">contact</field>
+            <field name="street">Lviv, Bandery street, 18</field>
+            <field name="email">fridrih_engels_the_best_transport_company@ukr.net</field>
+            <field name="email_normalized">fridrih_engels_the_best_transport_company@ukr.net</field>
+            <field name="phone">155-541-923</field>
+            <field name="mobile">095-173-76-00</field>
+            <field name="is_company">False</field>
+            <field name="partner_share">True</field>
+            <field name="partner_gid">0</field>
+            <field name="invoice_warn">no-message</field>
+            <field name="sale_warn">no-message</field>
+            <field name="supplier_rank">0</field>
+            <field name="customer_rank">0</field>
+            <field name="is_carrier">False</field>
+            <field name="is_carrier_contact_person">True</field>
+        </record>
+
+        <record id="transport_deliveries_contact_person_4" model="res.partner">
+            <field name="name">Carl Marks (The Best Transport Company)</field>
+            <field name="complete_name">Carl Marks (The Best Transport Company)</field>
+            <field name="commercial_company_name">Carl Marks (The Best Transport Company)</field>
+            <field name="industry_id">8</field>
+            <field name="lang">uk_UA</field>
+            <field name="vat">34789356</field>
+            <field name="commercial_partner_id">64</field>
+            <field name="type">contact</field>
+            <field name="street">Lviv, Bandery street, 200</field>
+            <field name="email">carl_marks_the_best_transport_company@ukr.net</field>
+            <field name="email_normalized">carl_marks_the_best_transport_company@ukr.net</field>
+            <field name="phone">258-166-088</field>
+            <field name="mobile">099-346-81-20</field>
+            <field name="is_company">False</field>
+            <field name="partner_share">True</field>
+            <field name="partner_gid">0</field>
+            <field name="invoice_warn">no-message</field>
+            <field name="sale_warn">no-message</field>
+            <field name="supplier_rank">0</field>
+            <field name="customer_rank">0</field>
+            <field name="is_carrier">False</field>
+            <field name="is_carrier_contact_person">True</field>
+        </record>
+
+    </data>
+</odoo>

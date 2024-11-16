@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_carrier_contact_person_form" model="ir.ui.view">
+        <field name="name">transport.deliveries.carrier.contact.person.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='is_carrier']" position="after">
+                <field name="is_carrier_contact_person"
+                       string="Is Contact Person"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_carrier_contact_person_search" model="ir.ui.view">
+        <field name="name">transport.deliveries.carrier.contact.person.search (transport_deliveries)</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='inactive']" position="before">
+               <filter string="Is Contact Person"
+                       name="filter_is_carrier_contact_person"
+                       domain="[('is_carrier_contact_person','=', True)]"
+                       invisible="False"
+               />
+               <separator/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_transport_deliveries_carrier_contact_person_window" model="ir.actions.act_window">
+        <field name="name">Carrier Contact Persons</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{
+            'search_default_filter_is_carrier_contact_person':1
+        }</field>
+    </record>
+
+    <menuitem id="transport_deliveries_menu_carrier_contact_person"
+              action="action_transport_deliveries_carrier_contact_person_window"
+              parent="transport_deliveries_menu_catalog"
+              name="Carrier Contact Persons" sequence="600"/>
+
+</odoo>
