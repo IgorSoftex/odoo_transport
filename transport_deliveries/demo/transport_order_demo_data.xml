@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="transport_order_1" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now()"/>
+            <field name="delivery_date" eval="datetime.now() + timedelta(days=5)"/>
+            <field name="transport_type">car</field>
+            <field name="order_state">draft</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_1"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_3"/>
+            <field name="shipment_place">Lviv, Ivana Fanka street, 18</field>
+            <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
+            <field name="description">Urgent delivery</field>
+        </record>
+
+        <record id="transport_order_2" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now()"/>
+            <field name="delivery_date" eval="datetime.now() + timedelta(days=4)"/>
+            <field name="transport_type">car</field>
+            <field name="order_state">draft</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_1"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_4"/>
+            <field name="shipment_place">Kyiv, Petliury street, 40</field>
+            <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
+            <field name="description">Important cargo</field>
+        </record>
+
+        <record id="transport_order_3" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now()"/>
+            <field name="delivery_date" eval="datetime.now() + timedelta(days=7)"/>
+            <field name="transport_type">car</field>
+            <field name="order_state">draft</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_2"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_1"/>
+            <field name="shipment_place">Kyiv, Petliury street, 40</field>
+            <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_4" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=10)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=5)"/>
+            <field name="transport_type">car</field>
+            <field name="order_state">completed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_1"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_3"/>
+            <field name="shipment_place">Kyiv, Tsentralna street, 100</field>
+            <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_5" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=20)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=12)"/>
+            <field name="transport_type">car</field>
+            <field name="order_state">cancelled</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_1"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_4"/>
+            <field name="shipment_place">Kyiv, Petliury street, 40</field>
+            <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
+            <field name="description">Important cargo</field>
+        </record>
+
+        <record id="transport_order_6" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=18)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=10)"/>
+            <field name="transport_type">car</field>
+            <field name="order_state">completed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_2"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_1"/>
+            <field name="shipment_place">Kyiv, Petliury street, 40</field>
+            <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_7" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=3)"/>
+            <field name="delivery_date" eval="datetime.now() + timedelta(days=2)"/>
+            <field name="transport_type">car</field>
+            <field name="order_state">in_progress</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_1"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_3"/>
+            <field name="shipment_place">Kyiv, Tsentralna street, 100</field>
+            <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_8" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=2)"/>
+            <field name="delivery_date" eval="datetime.now() + timedelta(days=5)"/>
+            <field name="transport_type">car</field>
+            <field name="order_state">confirmed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_2"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_1"/>
+            <field name="shipment_place">Kyiv, Petliury street, 40</field>
+            <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_9" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=20)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=15)"/>
+            <field name="transport_type">car</field>
+            <field name="order_state">completed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_2"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_1"/>
+            <field name="shipment_place">Kyiv, Petliury street, 40</field>
+            <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_10" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=50)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=40)"/>
+            <field name="transport_type">car</field>
+            <field name="order_state">completed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_1"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_4"/>
+            <field name="shipment_place">Kyiv, Tsentralna street, 100</field>
+            <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_11" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=40)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=32)"/>
+            <field name="transport_type">car</field>
+            <field name="order_state">cancelled</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_1"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_3"/>
+            <field name="shipment_place">Kyiv, Tsentralna street, 100</field>
+            <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_12" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=4)"/>
+            <field name="delivery_date" eval="datetime.now() + timedelta(days=3)"/>
+            <field name="transport_type">car</field>
+            <field name="order_state">confirmed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_2"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_1"/>
+            <field name="shipment_place">Kyiv, Petliury street, 40</field>
+            <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_14" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=30)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=20)"/>
+            <field name="transport_type">car</field>
+            <field name="order_state">completed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_2"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_1"/>
+            <field name="shipment_place">Kyiv, Petliury street, 40</field>
+            <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_15" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=31)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=22)"/>
+            <field name="transport_type">car</field>
+            <field name="order_state">completed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_2"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_1"/>
+            <field name="shipment_place">Kyiv, Petliury street, 40</field>
+            <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
+            <field name="description"></field>
+        </record>
+
+    </data>
+</odoo>

@@ -29,7 +29,7 @@
                             <field name="cargo_weight"/>
                         </group>
                         <group>
-                            <field name="type" widget="radio"/>
+                            <field name="type"/>
                             <field name="description"/>
                         </group>
                     </group>
