@@ -74,5 +74,29 @@
             <field name="is_carrier">True</field>
         </record>
 
+        <record id="transport_deliveries_carrier_4" model="res.partner">
+            <field name="name">Sea Transport Company</field>
+            <field name="complete_name">Sea Transport Company</field>
+            <field name="commercial_company_name">Sea Transport Company</field>
+            <field name="industry_id">8</field>
+            <field name="lang">uk_UA</field>
+            <field name="vat">45671122</field>
+            <field name="commercial_partner_id">64</field>
+            <field name="type">contact</field>
+            <field name="street">Odessa, Deribasivska street, 1</field>
+            <field name="email">sea_transport_company@ukr.net</field>
+            <field name="email_normalized">sea_transport_company@ukr.net</field>
+            <field name="phone">567-598-222</field>
+            <field name="mobile">093-398-37-89</field>
+            <field name="is_company">True</field>
+            <field name="partner_share">True</field>
+            <field name="partner_gid">0</field>
+            <field name="invoice_warn">no-message</field>
+            <field name="sale_warn">no-message</field>
+            <field name="supplier_rank">0</field>
+            <field name="customer_rank">0</field>
+            <field name="is_carrier">True</field>
+        </record>
+
     </data>
 </odoo>

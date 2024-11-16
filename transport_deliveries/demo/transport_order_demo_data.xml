@@ -294,5 +294,67 @@
             <field name="description"></field>
         </record>
 
+        <!-- Ships -->
+
+        <record id="transport_order_26" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=3)"/>
+            <field name="delivery_date" eval="datetime.now() + timedelta(days=5)"/>
+            <field name="transport_type">sea</field>
+            <field name="order_state">confirmed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_4"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_6"/>
+            <field name="shipment_place">Kyiv, Naberezna street, 1</field>
+            <field name="delivery_place">Poland, Gdansk, Sea street, 11</field>
+            <field name="description">By sea</field>
+        </record>
+
+        <record id="transport_order_27" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now()"/>
+            <field name="delivery_date" eval="datetime.now() + timedelta(days=14)"/>
+            <field name="transport_type">sea</field>
+            <field name="order_state">draft</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_4"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_6"/>
+            <field name="shipment_place">Kyiv, Naberezna street, 1</field>
+            <field name="delivery_place">Poland, Gdansk, Sea street, 11</field>
+            <field name="description">By sea</field>
+        </record>
+
+        <record id="transport_order_28" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=30)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=12)"/>
+            <field name="transport_type">sea</field>
+            <field name="order_state">completed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_4"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_6"/>
+            <field name="shipment_place">Kyiv, Naberezna street, 1</field>
+            <field name="delivery_place">Poland, Gdansk, Sea street, 11</field>
+            <field name="description">By sea</field>
+        </record>
+
+        <record id="transport_order_29" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=60)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=42)"/>
+            <field name="transport_type">sea</field>
+            <field name="order_state">completed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_4"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_6"/>
+            <field name="shipment_place">Kyiv, Naberezna street, 1</field>
+            <field name="delivery_place">Poland, Gdansk, Sea street, 11</field>
+            <field name="description">By sea</field>
+        </record>
+
+        <record id="transport_order_30" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=52)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=31)"/>
+            <field name="transport_type">sea</field>
+            <field name="order_state">completed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_4"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_6"/>
+            <field name="shipment_place">Kyiv, Naberezna street, 1</field>
+            <field name="delivery_place">Poland, Gdansk, Sea street, 11</field>
+            <field name="description">By sea</field>
+        </record>
+
     </data>
 </odoo>
