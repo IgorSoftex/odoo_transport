@@ -116,6 +116,7 @@
         <field name="arch" type="xml">
             <pivot string="Transport Orders"
                    display_quantity="1">
+                <field name="transport_type" type="row"/>
                 <field name="carrier_id" type="row"/>
                 <field name="order_state" type="col"/>
             </pivot>
