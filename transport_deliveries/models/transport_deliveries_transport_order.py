@@ -64,6 +64,10 @@ class TransportDeliveriesTransportOrder(models.Model):
                    ('cancelled', 'Cancelled'),
                    ]
     )
+    order_amount = fields.Float(string="Order Amount",
+                                help='Order Amount',
+                                # required=True,
+    )
     description = fields.Text(
         # translate=True,
     )

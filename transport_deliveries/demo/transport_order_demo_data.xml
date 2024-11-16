@@ -14,6 +14,7 @@
             <field name="shipment_place">Lviv, Ivana Fanka street, 18</field>
             <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
             <field name="description">Urgent delivery</field>
+            <field name="order_amount">20500</field>
         </record>
 
         <record id="transport_order_2" model="transport.deliveries.transport.order">
@@ -26,6 +27,7 @@
             <field name="shipment_place">Kyiv, Petliury street, 40</field>
             <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
             <field name="description">Important cargo</field>
+            <field name="order_amount">21500</field>
         </record>
 
         <record id="transport_order_3" model="transport.deliveries.transport.order">
@@ -38,6 +40,7 @@
             <field name="shipment_place">Kyiv, Petliury street, 40</field>
             <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
             <field name="description"></field>
+            <field name="order_amount">18200</field>
         </record>
 
         <record id="transport_order_4" model="transport.deliveries.transport.order">
@@ -50,6 +53,7 @@
             <field name="shipment_place">Kyiv, Tsentralna street, 100</field>
             <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
             <field name="description"></field>
+            <field name="order_amount">36800</field>
         </record>
 
         <record id="transport_order_5" model="transport.deliveries.transport.order">
@@ -62,6 +66,7 @@
             <field name="shipment_place">Kyiv, Petliury street, 40</field>
             <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
             <field name="description">Important cargo</field>
+            <field name="order_amount">28600</field>
         </record>
 
         <record id="transport_order_6" model="transport.deliveries.transport.order">
@@ -74,6 +79,7 @@
             <field name="shipment_place">Kyiv, Petliury street, 40</field>
             <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
             <field name="description"></field>
+            <field name="order_amount">31000</field>
         </record>
 
         <record id="transport_order_7" model="transport.deliveries.transport.order">
@@ -86,6 +92,7 @@
             <field name="shipment_place">Kyiv, Tsentralna street, 100</field>
             <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
             <field name="description"></field>
+            <field name="order_amount">30000</field>
         </record>
 
         <record id="transport_order_8" model="transport.deliveries.transport.order">
@@ -98,6 +105,7 @@
             <field name="shipment_place">Kyiv, Petliury street, 40</field>
             <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
             <field name="description"></field>
+            <field name="order_amount">26000</field>
         </record>
 
         <record id="transport_order_9" model="transport.deliveries.transport.order">
@@ -110,6 +118,7 @@
             <field name="shipment_place">Kyiv, Petliury street, 40</field>
             <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
             <field name="description"></field>
+            <field name="order_amount">26600</field>
         </record>
 
         <record id="transport_order_10" model="transport.deliveries.transport.order">
@@ -122,6 +131,7 @@
             <field name="shipment_place">Kyiv, Tsentralna street, 100</field>
             <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
             <field name="description"></field>
+            <field name="order_amount">26100</field>
         </record>
 
         <record id="transport_order_11" model="transport.deliveries.transport.order">
@@ -134,6 +144,7 @@
             <field name="shipment_place">Kyiv, Tsentralna street, 100</field>
             <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
             <field name="description"></field>
+            <field name="order_amount">40800</field>
         </record>
 
         <record id="transport_order_12" model="transport.deliveries.transport.order">
@@ -146,6 +157,7 @@
             <field name="shipment_place">Kyiv, Petliury street, 40</field>
             <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
             <field name="description"></field>
+            <field name="order_amount">41500</field>
         </record>
 
         <record id="transport_order_14" model="transport.deliveries.transport.order">
@@ -158,6 +170,7 @@
             <field name="shipment_place">Kyiv, Petliury street, 40</field>
             <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
             <field name="description"></field>
+            <field name="order_amount">41000</field>
         </record>
 
         <record id="transport_order_15" model="transport.deliveries.transport.order">
@@ -170,6 +183,7 @@
             <field name="shipment_place">Kyiv, Petliury street, 40</field>
             <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
             <field name="description"></field>
+            <field name="order_amount">32800</field>
         </record>
 
         <!-- Railway -->
@@ -184,6 +198,7 @@
             <field name="shipment_place">Kyiv, Promislova street, 40</field>
             <field name="delivery_place">Germany, Berlin, Green street, 10</field>
             <field name="description">Large cargo</field>
+            <field name="order_amount">210500</field>
         </record>
 
         <record id="transport_order_17" model="transport.deliveries.transport.order">
@@ -196,6 +211,7 @@
             <field name="shipment_place">Kyiv, Promislova street, 40</field>
             <field name="delivery_place">Germany, Berlin, Green street, 10</field>
             <field name="description">Large cargo</field>
+            <field name="order_amount">200000</field>
         </record>
 
         <record id="transport_order_18" model="transport.deliveries.transport.order">
@@ -208,6 +224,7 @@
             <field name="shipment_place">Kyiv, Promislova street, 40</field>
             <field name="delivery_place">Germany, Berlin, Green street, 10</field>
             <field name="description"></field>
+            <field name="order_amount">180000</field>
         </record>
 
         <record id="transport_order_19" model="transport.deliveries.transport.order">
@@ -220,6 +237,7 @@
             <field name="shipment_place">Kyiv, Promislova street, 40</field>
             <field name="delivery_place">Germany, Berlin, Green street, 10</field>
             <field name="description"></field>
+            <field name="order_amount">220000</field>
         </record>
 
         <record id="transport_order_20" model="transport.deliveries.transport.order">
@@ -232,6 +250,7 @@
             <field name="shipment_place">Kyiv, Promislova street, 40</field>
             <field name="delivery_place">Germany, Berlin, Green street, 10</field>
             <field name="description"></field>
+            <field name="order_amount">200000</field>
         </record>
 
         <record id="transport_order_21" model="transport.deliveries.transport.order">
@@ -244,6 +263,7 @@
             <field name="shipment_place">Kyiv, Promislova street, 40</field>
             <field name="delivery_place">Germany, Berlin, Green street, 10</field>
             <field name="description">Large cargo</field>
+            <field name="order_amount">200000</field>
         </record>
 
         <record id="transport_order_22" model="transport.deliveries.transport.order">
@@ -256,6 +276,7 @@
             <field name="shipment_place">Kyiv, Promislova street, 40</field>
             <field name="delivery_place">Germany, Berlin, Green street, 10</field>
             <field name="description"></field>
+            <field name="order_amount">260000</field>
         </record>
 
         <record id="transport_order_23" model="transport.deliveries.transport.order">
@@ -268,6 +289,7 @@
             <field name="shipment_place">Kyiv, Promislova street, 40</field>
             <field name="delivery_place">Germany, Berlin, Green street, 10</field>
             <field name="description"></field>
+            <field name="order_amount">240000</field>
         </record>
 
         <record id="transport_order_24" model="transport.deliveries.transport.order">
@@ -280,6 +302,7 @@
             <field name="shipment_place">Kyiv, Promislova street, 40</field>
             <field name="delivery_place">Germany, Berlin, Green street, 10</field>
             <field name="description"></field>
+            <field name="order_amount">245000</field>
         </record>
 
         <record id="transport_order_25" model="transport.deliveries.transport.order">
@@ -292,6 +315,7 @@
             <field name="shipment_place">Kyiv, Promislova street, 40</field>
             <field name="delivery_place">Germany, Berlin, Green street, 10</field>
             <field name="description"></field>
+            <field name="order_amount">240000</field>
         </record>
 
         <!-- Ships -->
@@ -306,6 +330,7 @@
             <field name="shipment_place">Kyiv, Naberezna street, 1</field>
             <field name="delivery_place">Poland, Gdansk, Sea street, 11</field>
             <field name="description">By sea</field>
+            <field name="order_amount">500000</field>
         </record>
 
         <record id="transport_order_27" model="transport.deliveries.transport.order">
@@ -318,6 +343,7 @@
             <field name="shipment_place">Kyiv, Naberezna street, 1</field>
             <field name="delivery_place">Poland, Gdansk, Sea street, 11</field>
             <field name="description">By sea</field>
+            <field name="order_amount">550000</field>
         </record>
 
         <record id="transport_order_28" model="transport.deliveries.transport.order">
@@ -330,6 +356,7 @@
             <field name="shipment_place">Kyiv, Naberezna street, 1</field>
             <field name="delivery_place">Poland, Gdansk, Sea street, 11</field>
             <field name="description">By sea</field>
+            <field name="order_amount">400000</field>
         </record>
 
         <record id="transport_order_29" model="transport.deliveries.transport.order">
@@ -342,6 +369,7 @@
             <field name="shipment_place">Kyiv, Naberezna street, 1</field>
             <field name="delivery_place">Poland, Gdansk, Sea street, 11</field>
             <field name="description">By sea</field>
+            <field name="order_amount">400000</field>
         </record>
 
         <record id="transport_order_30" model="transport.deliveries.transport.order">
@@ -354,6 +382,7 @@
             <field name="shipment_place">Kyiv, Naberezna street, 1</field>
             <field name="delivery_place">Poland, Gdansk, Sea street, 11</field>
             <field name="description">By sea</field>
+            <field name="order_amount">420000</field>
         </record>
 
     </data>

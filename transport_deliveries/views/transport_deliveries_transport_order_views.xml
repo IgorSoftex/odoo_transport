@@ -11,6 +11,7 @@
                 <field name="transport_type"/>
                 <field name="carrier_id"/>
                 <field name="order_state"/>
+                <field name="order_amount"/>
                 <field name="description"/>
             </tree>
         </field>
@@ -29,12 +30,13 @@
                             <field name="delivery_date"/>
                             <field name="transport_type"/>
                             <field name="carrier_id"/>
-                            <field name="contact_person_id"/>
+                            <field name="order_amount"/>
                         </group>
                         <group>
                             <field name="order_state"
                                    widget="statusbar"
                                    options="{'clickable': '1'}"/>
+                            <field name="contact_person_id"/>
                             <field name="shipment_place"/>
                             <field name="delivery_place"/>
                             <field name="description"/>
@@ -45,11 +47,51 @@
         </field>
     </record>
 
+    <record id="transport_deliveries_transport_order_kanban" model="ir.ui.view">
+        <field name="name">transport.deliveries.transport.order.kanban</field>
+        <field name="model">transport.deliveries.transport.order</field>
+        <field name="arch" type="xml">
+            <kanban string="Transport Order"
+                    quick_create="0"
+                    quick_create_view="transport_deliveries.transport_deliveries_transport_order_form"
+                    default_group_by="transport_type"
+                    groups_draggable="0"
+                    records_draggable="0">
+                <field name="order_date"/>
+                <field name="transport_type"/>
+                <progressbar field="order_state"
+                             colors='{"completed": "success","confirmed": "warning","in_progress": "blue","cancelled": "danger","draft": "grey"}'/>
+                <templates>
+                    <t t-name="kanban-menu">
+                        <t t-if="widget.editable"><a role="menuitem" type="edit" class="dropdown-item">Edit</a></t>
+                        <t t-if="widget.deletable"><a role="menuitem" type="delete" class="dropdown-item">
+                            Delete</a></t>
+                    </t>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="row">
+                                <div class="col-8">
+                                    <strong><field name="carrier_id"/></strong>
+                                </div>
+                            </div>
+                            <div>
+                                <field name="order_date"/>
+                            </div>
+                            <div>
+                                <field name="order_state"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
     <record id="action_transport_deliveries_transport_order_window" model="ir.actions.act_window">
         <field name="name">Transport Order</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">transport.deliveries.transport.order</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,kanban</field>
     </record>
 
     <menuitem id="transport_deliveries_menu_transport_order"
