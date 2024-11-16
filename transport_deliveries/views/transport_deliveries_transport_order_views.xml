@@ -51,7 +51,7 @@
         <field name="name">transport.deliveries.transport.order.kanban</field>
         <field name="model">transport.deliveries.transport.order</field>
         <field name="arch" type="xml">
-            <kanban string="Transport Order"
+            <kanban string="Transport Orders"
                     quick_create="0"
                     quick_create_view="transport_deliveries.transport_deliveries_transport_order_form"
                     default_group_by="transport_type"
@@ -109,11 +109,24 @@
         </field>
     </record>
 
+    <record id="transport_deliveries_transport_order_pivot" model="ir.ui.view">
+        <field name="name">transport.deliveries.transport.order.pivot (transport_deliveries)</field>
+        <field name="model">transport.deliveries.transport.order</field>
+        <field name="priority">50</field>
+        <field name="arch" type="xml">
+            <pivot string="Transport Orders"
+                   display_quantity="1">
+                <field name="carrier_id" type="row"/>
+                <field name="order_state" type="col"/>
+            </pivot>
+        </field>
+    </record>
+
     <record id="action_transport_deliveries_transport_order_window" model="ir.actions.act_window">
         <field name="name">Transport Order</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">transport.deliveries.transport.order</field>
-        <field name="view_mode">tree,form,kanban,calendar</field>
+        <field name="view_mode">tree,form,kanban,calendar,pivot</field>
     </record>
 
     <menuitem id="transport_deliveries_menu_transport_order"
