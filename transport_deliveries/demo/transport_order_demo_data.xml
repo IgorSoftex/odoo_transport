@@ -2,6 +2,8 @@
 <odoo>
     <data>
 
+<!-- Trucks -->
+
         <record id="transport_order_1" model="transport.deliveries.transport.order">
             <field name="order_date" eval="datetime.now()"/>
             <field name="delivery_date" eval="datetime.now() + timedelta(days=5)"/>
@@ -167,6 +169,128 @@
             <field name="contact_person_id" ref="transport_deliveries_contact_person_1"/>
             <field name="shipment_place">Kyiv, Petliury street, 40</field>
             <field name="delivery_place">Check Republick, Praha, Tree street, 200</field>
+            <field name="description"></field>
+        </record>
+
+        <!-- Railway -->
+
+        <record id="transport_order_16" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=3)"/>
+            <field name="delivery_date" eval="datetime.now() + timedelta(days=5)"/>
+            <field name="transport_type">railway</field>
+            <field name="order_state">confirmed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_3"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_5"/>
+            <field name="shipment_place">Kyiv, Promislova street, 40</field>
+            <field name="delivery_place">Germany, Berlin, Green street, 10</field>
+            <field name="description">Large cargo</field>
+        </record>
+
+        <record id="transport_order_17" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=7)"/>
+            <field name="delivery_date" eval="datetime.now() + timedelta(days=2)"/>
+            <field name="transport_type">railway</field>
+            <field name="order_state">draft</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_3"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_5"/>
+            <field name="shipment_place">Kyiv, Promislova street, 40</field>
+            <field name="delivery_place">Germany, Berlin, Green street, 10</field>
+            <field name="description">Large cargo</field>
+        </record>
+
+        <record id="transport_order_18" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=3)"/>
+            <field name="delivery_date" eval="datetime.now() + timedelta(days=5)"/>
+            <field name="transport_type">railway</field>
+            <field name="order_state">in_progress</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_3"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_5"/>
+            <field name="shipment_place">Kyiv, Promislova street, 40</field>
+            <field name="delivery_place">Germany, Berlin, Green street, 10</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_19" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=4)"/>
+            <field name="delivery_date" eval="datetime.now() + timedelta(days=5)"/>
+            <field name="transport_type">railway</field>
+            <field name="order_state">in_progress</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_3"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_5"/>
+            <field name="shipment_place">Kyiv, Promislova street, 40</field>
+            <field name="delivery_place">Germany, Berlin, Green street, 10</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_20" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=15)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=5)"/>
+            <field name="transport_type">railway</field>
+            <field name="order_state">completed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_3"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_5"/>
+            <field name="shipment_place">Kyiv, Promislova street, 40</field>
+            <field name="delivery_place">Germany, Berlin, Green street, 10</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_21" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=25)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=14)"/>
+            <field name="transport_type">railway</field>
+            <field name="order_state">cancelled</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_3"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_5"/>
+            <field name="shipment_place">Kyiv, Promislova street, 40</field>
+            <field name="delivery_place">Germany, Berlin, Green street, 10</field>
+            <field name="description">Large cargo</field>
+        </record>
+
+        <record id="transport_order_22" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=48)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=35)"/>
+            <field name="transport_type">railway</field>
+            <field name="order_state">completed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_3"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_5"/>
+            <field name="shipment_place">Kyiv, Promislova street, 40</field>
+            <field name="delivery_place">Germany, Berlin, Green street, 10</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_23" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=43)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=37)"/>
+            <field name="transport_type">railway</field>
+            <field name="order_state">completed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_3"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_5"/>
+            <field name="shipment_place">Kyiv, Promislova street, 40</field>
+            <field name="delivery_place">Germany, Berlin, Green street, 10</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_24" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=65)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=52)"/>
+            <field name="transport_type">railway</field>
+            <field name="order_state">completed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_3"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_5"/>
+            <field name="shipment_place">Kyiv, Promislova street, 40</field>
+            <field name="delivery_place">Germany, Berlin, Green street, 10</field>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_25" model="transport.deliveries.transport.order">
+            <field name="order_date" eval="datetime.now() - timedelta(days=28)"/>
+            <field name="delivery_date" eval="datetime.now() - timedelta(days=15)"/>
+            <field name="transport_type">railway</field>
+            <field name="order_state">completed</field>
+            <field name="carrier_id" ref="transport_deliveries_carrier_3"/>
+            <field name="contact_person_id" ref="transport_deliveries_contact_person_5"/>
+            <field name="shipment_place">Kyiv, Promislova street, 40</field>
+            <field name="delivery_place">Germany, Berlin, Green street, 10</field>
             <field name="description"></field>
         </record>
 

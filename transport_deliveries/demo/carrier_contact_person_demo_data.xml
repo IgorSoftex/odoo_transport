@@ -102,5 +102,30 @@
             <field name="is_carrier_contact_person">True</field>
         </record>
 
+        <record id="transport_deliveries_contact_person_5" model="res.partner">
+            <field name="name">Sara Connor (Railway Transport Company)</field>
+            <field name="complete_name">Sara Connor (Railway Transport Company)</field>
+            <field name="commercial_company_name">Sara Connor (Railway Transport Company)</field>
+            <field name="industry_id">8</field>
+            <field name="lang">uk_UA</field>
+            <field name="vat">334456780</field>
+            <field name="commercial_partner_id">64</field>
+            <field name="type">contact</field>
+            <field name="street">Lviv, Amosova street, 12</field>
+            <field name="email">sara_connor_railway_transport_company@ukr.net</field>
+            <field name="email_normalized">sara_connor_railway_transport_company@ukr.net</field>
+            <field name="phone">011-500-266</field>
+            <field name="mobile">093-055-01-09</field>
+            <field name="is_company">False</field>
+            <field name="partner_share">True</field>
+            <field name="partner_gid">0</field>
+            <field name="invoice_warn">no-message</field>
+            <field name="sale_warn">no-message</field>
+            <field name="supplier_rank">0</field>
+            <field name="customer_rank">0</field>
+            <field name="is_carrier">False</field>
+            <field name="is_carrier_contact_person">True</field>
+        </record>
+
     </data>
 </odoo>

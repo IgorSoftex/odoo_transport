@@ -50,5 +50,29 @@
             <field name="is_carrier">True</field>
         </record>
 
+        <record id="transport_deliveries_carrier_3" model="res.partner">
+            <field name="name">Railway Transport Company</field>
+            <field name="complete_name">Railway Transport Company</field>
+            <field name="commercial_company_name">Railway Transport Company</field>
+            <field name="industry_id">8</field>
+            <field name="lang">uk_UA</field>
+            <field name="vat">45671122</field>
+            <field name="commercial_partner_id">64</field>
+            <field name="type">contact</field>
+            <field name="street">Dnipro, Velika street, 50</field>
+            <field name="email">railway_transport_company@ukr.net</field>
+            <field name="email_normalized">railway_transport_company@ukr.net</field>
+            <field name="phone">133-466-001</field>
+            <field name="mobile">098-888-23-08</field>
+            <field name="is_company">True</field>
+            <field name="partner_share">True</field>
+            <field name="partner_gid">0</field>
+            <field name="invoice_warn">no-message</field>
+            <field name="sale_warn">no-message</field>
+            <field name="supplier_rank">0</field>
+            <field name="customer_rank">0</field>
+            <field name="is_carrier">True</field>
+        </record>
+
     </data>
 </odoo>
