@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+<!-- Trucks -->
+
+    <!-- transport_order_1 draft -->
+
+<!--        <record id="transport_order_line_1_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_1"/>
+            <field name="transport_id" ref="transport_1_1"/>
+            <field name="description">Good truck</field>
+        </record> -->
+
+<!--        <record id="transport_order_line_1_2" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_1"/>
+            <field name="transport_id" ref="transport_1_2"/>
+            <field name="description">Good truck too</field>
+        </record> -->
+
+    <!-- transport_order_2 draft -->
+
+<!--        <record id="transport_order_line_2_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_2"/>
+            <field name="transport_id" ref="transport_1_3"/>
+            <field name="description">Good truck</field>
+        </record> -->
+
+<!--        <record id="transport_order_line_2_2" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_2"/>
+            <field name="transport_id" ref="transport_2_2"/>
+            <field name="description">Good truck too</field>
+        </record> -->
+
+    <!-- transport_order_3 draft -->
+
+<!--        <record id="transport_order_line_3_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_3"/>
+            <field name="transport_id" ref="transport_2_1"/>
+            <field name="description">Truck</field>
+        </record> -->
+
+    <!-- transport_order_4 completed -->
+
+        <record id="transport_order_line_4_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_4"/>
+            <field name="transport_id" ref="transport_2_1"/>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_line_4_2" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_4"/>
+            <field name="transport_id" ref="transport_2_2"/>
+            <field name="description">New truck</field>
+        </record>
+
+        <record id="transport_order_line_4_3" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_4"/>
+            <field name="transport_id" ref="transport_3_1"/>
+            <field name="description">Bad truck</field>
+        </record>
+
+    <!-- transport_order_6 completed -->
+
+        <record id="transport_order_line_6_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_6"/>
+            <field name="transport_id" ref="transport_3_3"/>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_line_6_2" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_6"/>
+            <field name="transport_id" ref="transport_3_4"/>
+            <field name="description">Safe truck</field>
+        </record>
+
+    <!-- transport_order_7 in_progress -->
+
+        <record id="transport_order_line_7_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_7"/>
+            <field name="transport_id" ref="transport_3_5"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_8 confirmed -->
+
+        <record id="transport_order_line_8_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_8"/>
+            <field name="transport_id" ref="transport_4_1"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_9 completed -->
+
+        <record id="transport_order_line_9_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_9"/>
+            <field name="transport_id" ref="transport_5_1"/>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_line_9_2" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_9"/>
+            <field name="transport_id" ref="transport_5_2"/>
+            <field name="description">Safe truck</field>
+        </record>
+
+    <!-- transport_order_10 completed -->
+
+        <record id="transport_order_line_10_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_10"/>
+            <field name="transport_id" ref="transport_5_3"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_12 confirmed -->
+
+        <record id="transport_order_line_12_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_12"/>
+            <field name="transport_id" ref="transport_6_2"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_14 completed -->
+
+        <record id="transport_order_line_14_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_14"/>
+            <field name="transport_id" ref="transport_6_3"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_15 completed -->
+
+        <record id="transport_order_line_15_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_15"/>
+            <field name="transport_id" ref="transport_6_1"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_16 confirmed -->
+
+        <record id="transport_order_line_16_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_16"/>
+            <field name="transport_id" ref="transport_7_5"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_18 in_progress -->
+
+        <record id="transport_order_line_18_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_18"/>
+            <field name="transport_id" ref="transport_7_1"/>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_line_18_2" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_18"/>
+            <field name="transport_id" ref="transport_7_2"/>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_line_18_3" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_18"/>
+            <field name="transport_id" ref="transport_7_3"/>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_line_18_4" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_18"/>
+            <field name="transport_id" ref="transport_7_4"/>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_line_18_5" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_18"/>
+            <field name="transport_id" ref="transport_7_5"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_19 in_progress -->
+
+        <record id="transport_order_line_19_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_19"/>
+            <field name="transport_id" ref="transport_7_1"/>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_line_19_2" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_19"/>
+            <field name="transport_id" ref="transport_7_2"/>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_line_19_3" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_19"/>
+            <field name="transport_id" ref="transport_7_3"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_20 in_progress -->
+
+        <record id="transport_order_line_20_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_20"/>
+            <field name="transport_id" ref="transport_7_1"/>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_line_20_2" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_20"/>
+            <field name="transport_id" ref="transport_7_2"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_22 in_progress -->
+
+        <record id="transport_order_line_22_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_22"/>
+            <field name="transport_id" ref="transport_7_1"/>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_line_22_2" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_22"/>
+            <field name="transport_id" ref="transport_7_2"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_23 in_progress -->
+
+        <record id="transport_order_line_23_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_23"/>
+            <field name="transport_id" ref="transport_7_1"/>
+            <field name="description"></field>
+        </record>
+
+        <record id="transport_order_line_23_2" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_23"/>
+            <field name="transport_id" ref="transport_7_2"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_24 in_progress -->
+
+        <record id="transport_order_line_24_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_24"/>
+            <field name="transport_id" ref="transport_7_1"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_25 in_progress -->
+
+        <record id="transport_order_line_25_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_25"/>
+            <field name="transport_id" ref="transport_7_1"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_26 completed Sea -->
+
+        <record id="transport_order_line_26_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_26"/>
+            <field name="transport_id" ref="transport_8_1"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_28 completed Sea -->
+
+        <record id="transport_order_line_28_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_28"/>
+            <field name="transport_id" ref="transport_8_2"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_29 completed Sea -->
+
+        <record id="transport_order_line_29_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_29"/>
+            <field name="transport_id" ref="transport_8_2"/>
+            <field name="description"></field>
+        </record>
+
+    <!-- transport_order_30 completed Sea -->
+
+        <record id="transport_order_line_30_1" model="transport.deliveries.transport.order.line">
+            <field name="transport_order_id" ref="transport_order_30"/>
+            <field name="transport_id" ref="transport_8_1"/>
+            <field name="description"></field>
+        </record>
+
+    </data>
+</odoo>

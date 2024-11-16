@@ -68,6 +68,12 @@ class TransportDeliveriesTransportOrder(models.Model):
                                 help='Order Amount',
                                 # required=True,
     )
+    transport_order_line_ids = fields.One2many(
+        comodel_name='transport.deliveries.transport.order.line',
+        inverse_name='transport_order_id',
+        string='Transport Order Line',
+        help='Transport Order Line',
+    )
     description = fields.Text(
         # translate=True,
     )

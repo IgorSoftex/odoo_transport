@@ -4,3 +4,4 @@ from . import transport_deliveries_vehicle_brand
 from . import transport_deliveries_carrier
 from . import transport_deliveries_contact_person
 from . import transport_deliveries_transport_order
+from . import transport_deliveries_transport_order_line
