@@ -87,11 +87,33 @@
         </field>
     </record>
 
+    <record id="transport_deliveries_transport_order_calendar" model="ir.ui.view">
+        <field name="name">transport.deliveries.transport.order.calendar (transport_deliveries)</field>
+        <field name="model">transport.deliveries.transport.order</field>
+        <field name="priority" eval="10"/>
+        <field name="arch" type="xml">
+            <calendar string="Transport Orders"
+                      date_start="order_date"
+                      date_stop="order_date"
+                      create="1"
+                      quick_create="0"
+                      create_name_field="order_date"
+                      mode="month"
+                      scales="day,week,month,year"
+                      color="order_state"
+                      event_open_popup="True">
+                <field name="order_date"/>
+                <field name="carrier_id"/>
+                <field name="order_state"/>
+            </calendar>
+        </field>
+    </record>
+
     <record id="action_transport_deliveries_transport_order_window" model="ir.actions.act_window">
         <field name="name">Transport Order</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">transport.deliveries.transport.order</field>
-        <field name="view_mode">tree,form,kanban</field>
+        <field name="view_mode">tree,form,kanban,calendar</field>
     </record>
 
     <menuitem id="transport_deliveries_menu_transport_order"
