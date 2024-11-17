@@ -16,14 +16,14 @@ class TransportDeliveriesTransportationCategory(models.Model):
     name = fields.Char(
         size=100,
         required=True,
-        # translate=True,
+        translate=True,
     )
     full_name = fields.Char(
         string='Complete Name',
         compute='_compute_full_name',
         recursive=True,
         store=True,
-        # translate=True,
+        translate=True,
     )
     type = fields.Selection(
         default='car',

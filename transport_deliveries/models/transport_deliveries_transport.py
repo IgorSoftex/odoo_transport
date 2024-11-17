@@ -14,7 +14,7 @@ class TransportDeliveriesTransport(models.Model):
         help='Name',
         size=100,
         required=True,
-        # translate=True,
+        translate=True,
     )
     full_name = fields.Char(
         string="Transport name",
