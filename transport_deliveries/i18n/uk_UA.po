@@ -6,14 +6,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-17 08:12+0000\n"
-"PO-Revision-Date: 2024-11-17 08:12+0000\n"
+"POT-Creation-Date: 2024-11-17 13:12+0000\n"
+"PO-Revision-Date: 2024-11-17 13:12+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
+
+#. module: transport_deliveries
+#: model:ir.actions.report,print_report_name:transport_deliveries.transport_deliveries_transport_order_report
+msgid "(object.name)"
+msgstr ""
 
 #. module: transport_deliveries
 #: model:res.groups,name:transport_deliveries.group_transport_deliveries_accountant
@@ -36,6 +41,7 @@ msgstr "Адміністратор"
 
 #. module: transport_deliveries
 #: model:ir.model.fields.selection,name:transport_deliveries.selection__transport_deliveries_transport_order__transport_type__air
+#: model:ir.model.fields.selection,name:transport_deliveries.selection__transport_deliveries_transport_order_report_wizard__transport_type__air
 #: model:ir.model.fields.selection,name:transport_deliveries.selection__transport_deliveries_transportation_category__type__air
 msgid "Air"
 msgstr "Повітряний транспорт"
@@ -84,6 +90,11 @@ msgid "Brand"
 msgstr "Бренд"
 
 #. module: transport_deliveries
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_report_form_view
+msgid "Cancel"
+msgstr "Відмінити"
+
+#. module: transport_deliveries
 #: model:ir.model.fields.selection,name:transport_deliveries.selection__transport_deliveries_transport_order__order_state__cancelled
 msgid "Cancelled"
 msgstr "Скасовано"
@@ -115,6 +126,11 @@ msgid "Carrier Contact Persons"
 msgstr "Контактна особа перевізника"
 
 #. module: transport_deliveries
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_template
+msgid "Carrier:"
+msgstr "Перевізник"
+
+#. module: transport_deliveries
 #: model:ir.actions.act_window,name:transport_deliveries.action_transport_deliveries_carrier_window
 #: model:ir.ui.menu,name:transport_deliveries.transport_deliveries_menu_carrier
 msgid "Carriers"
@@ -134,6 +150,11 @@ msgstr "Категорія"
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transportation_category__child_id
 msgid "Child Category"
 msgstr "Підлегла категорія"
+
+#. module: transport_deliveries
+#: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order__company_id
+msgid "Company"
+msgstr "Компанія"
 
 #. module: transport_deliveries
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transportation_category__full_name
@@ -164,6 +185,7 @@ msgstr "Контактні особи"
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport__create_uid
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order__create_uid
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_line__create_uid
+#: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_report_wizard__create_uid
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transportation_category__create_uid
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_vehicle_brand__create_uid
 msgid "Created by"
@@ -173,6 +195,7 @@ msgstr "Створено"
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport__create_date
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order__create_date
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_line__create_date
+#: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_report_wizard__create_date
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transportation_category__create_date
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_vehicle_brand__create_date
 msgid "Created on"
@@ -196,10 +219,20 @@ msgid "Delete"
 msgstr "Видалити"
 
 #. module: transport_deliveries
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_template
+msgid "Delivery Date:"
+msgstr "Дата доставки"
+
+#. module: transport_deliveries
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order__delivery_place
 #: model:ir.model.fields,help:transport_deliveries.field_transport_deliveries_transport_order__delivery_place
 msgid "Delivery Place"
 msgstr "Місце доставки"
+
+#. module: transport_deliveries
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_template
+msgid "Delivery Place:"
+msgstr "Місце доставки:"
 
 #. module: transport_deliveries
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order__delivery_date
@@ -219,9 +252,15 @@ msgid "Description"
 msgstr "Опис"
 
 #. module: transport_deliveries
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_template
+msgid "Description:"
+msgstr "Опис:"
+
+#. module: transport_deliveries
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport__display_name
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order__display_name
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_line__display_name
+#: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_report_wizard__display_name
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transportation_category__display_name
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_vehicle_brand__display_name
 msgid "Display Name"
@@ -267,6 +306,7 @@ msgstr "Фільтри"
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport__id
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order__id
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_line__id
+#: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_report_wizard__id
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transportation_category__id
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_vehicle_brand__id
 msgid "ID"
@@ -315,6 +355,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport__write_uid
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order__write_uid
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_line__write_uid
+#: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_report_wizard__write_uid
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transportation_category__write_uid
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_vehicle_brand__write_uid
 msgid "Last Updated by"
@@ -324,6 +365,7 @@ msgstr "Останні зміни"
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport__write_date
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order__write_date
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_line__write_date
+#: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_report_wizard__write_date
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transportation_category__write_date
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_vehicle_brand__write_date
 msgid "Last Updated on"
@@ -415,6 +457,16 @@ msgid "Parent Path"
 msgstr "Шлях до батьківської категорії"
 
 #. module: transport_deliveries
+#: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_report_wizard__end_date
+msgid "Period end"
+msgstr "Дата закінчення"
+
+#. module: transport_deliveries
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_report_form_view
+msgid "Period:"
+msgstr "Період"
+
+#. module: transport_deliveries
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport__picture
 msgid "Picture"
 msgstr "Картинка"
@@ -426,6 +478,7 @@ msgstr "Вагон-платформа"
 
 #. module: transport_deliveries
 #: model:ir.model.fields.selection,name:transport_deliveries.selection__transport_deliveries_transport_order__transport_type__railway
+#: model:ir.model.fields.selection,name:transport_deliveries.selection__transport_deliveries_transport_order_report_wizard__transport_type__railway
 #: model:ir.model.fields.selection,name:transport_deliveries.selection__transport_deliveries_transportation_category__type__railway
 #: model:transport.deliveries.transportation.category,full_name:transport_deliveries.transportation_category_21
 #: model:transport.deliveries.transportation.category,name:transport_deliveries.transportation_category_21
@@ -458,11 +511,21 @@ msgid "Railway manager"
 msgstr "Менеджер залізниці"
 
 #. module: transport_deliveries
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_template
+msgid "Registration Number"
+msgstr "Реєстраційний номер"
+
+#. module: transport_deliveries
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport__registration_number
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_line__transport_id_registration_number
 #: model:ir.model.fields,help:transport_deliveries.field_transport_deliveries_transport__registration_number
 msgid "Registration number"
 msgstr "Реєстраційний номер"
+
+#. module: transport_deliveries
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_report_form_view
+msgid "Run Report"
+msgstr "Сформувати звіт"
 
 #. module: transport_deliveries
 #: model:transport.deliveries.transport,name:transport_deliveries.transport_5_1
@@ -473,6 +536,7 @@ msgstr ""
 
 #. module: transport_deliveries
 #: model:ir.model.fields.selection,name:transport_deliveries.selection__transport_deliveries_transport_order__transport_type__sea
+#: model:ir.model.fields.selection,name:transport_deliveries.selection__transport_deliveries_transport_order_report_wizard__transport_type__sea
 #: model:ir.model.fields.selection,name:transport_deliveries.selection__transport_deliveries_transportation_category__type__sea
 msgid "Sea"
 msgstr "Морський транспорт"
@@ -494,6 +558,11 @@ msgid "Shipment Place"
 msgstr "Місце відвантаження"
 
 #. module: transport_deliveries
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_template
+msgid "Shipment Place:"
+msgstr ""
+
+#. module: transport_deliveries
 #: model:transport.deliveries.transportation.category,full_name:transport_deliveries.transportation_category_29
 #: model:transport.deliveries.transportation.category,name:transport_deliveries.transportation_category_29
 msgid "Ships"
@@ -513,6 +582,16 @@ msgstr "Кораблі / Малий контейнер (суховантажне
 #: model:transport.deliveries.transportation.category,name:transport_deliveries.transportation_category_19
 msgid "Short truck"
 msgstr "Коротка вантажівка"
+
+#. module: transport_deliveries
+#: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_report_wizard__begin_date
+msgid "Start of period"
+msgstr "Початок періоду"
+
+#. module: transport_deliveries
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_template
+msgid "State:"
+msgstr "Стан:"
 
 #. module: transport_deliveries
 #: model:transport.deliveries.transportation.category,name:transport_deliveries.transportation_category_24
@@ -537,6 +616,7 @@ msgstr "Партнер є контактною особою перевізник
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_line__transport_id
 #: model:ir.model.fields,help:transport_deliveries.field_transport_deliveries_transport_order_line__transport_id
 #: model:ir.ui.menu,name:transport_deliveries.transport_deliveries_menu_transport
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_template
 msgid "Transport"
 msgstr "Транспорт"
 
@@ -547,6 +627,7 @@ msgstr "Контактна особа перевізника"
 
 #. module: transport_deliveries
 #: model:ir.actions.act_window,name:transport_deliveries.action_transport_deliveries_transport_order_window
+#: model:ir.actions.report,name:transport_deliveries.transport_deliveries_transport_order_report
 #: model:ir.model,name:transport_deliveries.model_transport_deliveries_transport_order
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_line__transport_order_id
 #: model:ir.model.fields,help:transport_deliveries.field_transport_deliveries_transport_order_line__transport_order_id
@@ -561,6 +642,14 @@ msgid "Transport Order Line"
 msgstr "Одиниця транспорту"
 
 #. module: transport_deliveries
+#: model:ir.actions.act_window,name:transport_deliveries.transport_order_report_act_window
+#: model:ir.model,name:transport_deliveries.model_transport_deliveries_transport_order_report_wizard
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_report_form_view
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_tree
+msgid "Transport Order Report"
+msgstr "Звіт по транспортних замовленнях"
+
+#. module: transport_deliveries
 #: model:ir.ui.menu,name:transport_deliveries.transport_deliveries_menu_transport_order
 #: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_calendar
 #: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_kanban
@@ -570,6 +659,7 @@ msgstr "Замовлення на транспорт"
 
 #. module: transport_deliveries
 #: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order__transport_type
+#: model:ir.model.fields,field_description:transport_deliveries.field_transport_deliveries_transport_order_report_wizard__transport_type
 msgid "Transport Type"
 msgstr "Тип транспорту"
 
@@ -579,9 +669,21 @@ msgid "Transport name"
 msgstr "Найменування транспорту"
 
 #. module: transport_deliveries
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_template
+msgid ""
+"Transport order\n"
+"\t\t\t\t\t\t\t\t("
+msgstr ""
+
+#. module: transport_deliveries
 #: model:ir.model.fields,help:transport_deliveries.field_transport_deliveries_transport_order_line__transport_id_registration_number
 msgid "Transport registration number"
 msgstr "Реєстраційний номер"
+
+#. module: transport_deliveries
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_template
+msgid "Transport units"
+msgstr "Транспортні одиниці"
 
 #. module: transport_deliveries
 #: model:ir.module.category,name:transport_deliveries.module_category_transport_deliveries
@@ -602,6 +704,7 @@ msgstr "Категорія транспорту"
 
 #. module: transport_deliveries
 #: model:ir.model.fields.selection,name:transport_deliveries.selection__transport_deliveries_transport_order__transport_type__car
+#: model:ir.model.fields.selection,name:transport_deliveries.selection__transport_deliveries_transport_order_report_wizard__transport_type__car
 #: model:ir.model.fields.selection,name:transport_deliveries.selection__transport_deliveries_transportation_category__type__car
 msgid "Truck"
 msgstr "Вантажівка"
