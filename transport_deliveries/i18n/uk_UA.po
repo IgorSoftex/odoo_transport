@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-17 13:12+0000\n"
-"PO-Revision-Date: 2024-11-17 13:12+0000\n"
+"POT-Creation-Date: 2024-11-17 13:30+0000\n"
+"PO-Revision-Date: 2024-11-17 13:30+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -71,6 +71,11 @@ msgstr "Літаки / Великі літаки"
 #: model:transport.deliveries.transportation.category,full_name:transport_deliveries.transportation_category_28
 msgid "Airplanes / Medium airplane"
 msgstr "Літаки / Середні літаки"
+
+#. module: transport_deliveries
+#: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_template
+msgid "Amount:"
+msgstr "Сума:"
 
 #. module: transport_deliveries
 #: model:transport.deliveries.transportation.category,name:transport_deliveries.transportation_category_27
@@ -560,7 +565,7 @@ msgstr "Місце відвантаження"
 #. module: transport_deliveries
 #: model_terms:ir.ui.view,arch_db:transport_deliveries.transport_deliveries_transport_order_template
 msgid "Shipment Place:"
-msgstr ""
+msgstr "Місце відвантаження"
 
 #. module: transport_deliveries
 #: model:transport.deliveries.transportation.category,full_name:transport_deliveries.transportation_category_29
@@ -674,6 +679,8 @@ msgid ""
 "Transport order\n"
 "\t\t\t\t\t\t\t\t("
 msgstr ""
+"Замовлення на перевезення\n"
+"\t\t\t\t\t\t\t\t("
 
 #. module: transport_deliveries
 #: model:ir.model.fields,help:transport_deliveries.field_transport_deliveries_transport_order_line__transport_id_registration_number

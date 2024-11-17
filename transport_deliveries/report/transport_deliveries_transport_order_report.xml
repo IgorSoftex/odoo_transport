@@ -45,6 +45,13 @@
 							</p>
 						</h3>
 
+						<h4>
+							<p>
+								Amount:
+								<t t-out="doc.order_amount"/>
+							</p>
+						</h4>
+
 						<p>
 							Delivery Date:
 							<t t-out="doc.delivery_date.strftime('%Y-%m-%d')"/>
