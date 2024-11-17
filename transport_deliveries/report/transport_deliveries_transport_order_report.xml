@@ -3,7 +3,7 @@
 
 	<record id="transport_deliveries_transport_order_report" model="ir.actions.report">
 
-		<field name="name">Transport Orders Report</field>
+		<field name="name">Transport Order Report</field>
 		<field name="model">transport.deliveries.transport.order</field>
 		<field name="report_type">qweb-html</field>
 		<field name="report_name">transport_deliveries.transport_deliveries_transport_order_template</field>
@@ -14,11 +14,40 @@
 
 	</record>
 
-	<template id="transport_deliveries_transport_order_template" name="transport order report">
+	<template id="transport_deliveries_transport_order_template">
 
 		<t t-call="web.html_container">
 
 			<t t-foreach="docs" t-as="doc">
+
+				<!-- У верхній частині звіту повинні бути логотип компанії, назва та контактні дані компанії -->
+				<t t-call="web.external_layout">
+
+					<div class="page">
+
+						<!-- Заголовок звіту повинен містити ПІБ лікаря та його спеціальність -->
+						<h2>
+							<p>
+								<t t-out="doc.order_date"/>
+								,
+								<t t-out="doc.transport_type"/>
+							</p>
+						</h2>
+
+						<!-- Нижче повинно виводитися інформація з історією візитів до лікаря, у хронологічному порядку (найостанніші зверху). -->
+
+						<!-- Нижче, — таблична форма пацієнтів даного лікаря -->
+
+							<div class="footer" style="border-top: 1px solid black; margin-top: 20px; padding-top: 10px;">
+								<div class="row">
+									<span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M:%S')"/>
+									<span t-field="doc.company_id.city"/>
+								</div>
+							</div>
+
+					</div>
+
+				</t>
 
 			</t>
 

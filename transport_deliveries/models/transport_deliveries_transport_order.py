@@ -67,16 +67,28 @@ class TransportDeliveriesTransportOrder(models.Model):
     order_amount = fields.Float(string="Order Amount",
                                 help='Order Amount',
                                 # required=True,
-    )
+                                )
     transport_order_line_ids = fields.One2many(
         comodel_name='transport.deliveries.transport.order.line',
         inverse_name='transport_order_id',
         string='Transport Order Line',
         help='Transport Order Line',
     )
+    company_id = fields.Many2one('res.company',
+                                 string='Company',
+                                 compute='compute_company_id',
+                                 # stored='False',
+                                 )
     description = fields.Text(
         # translate=True,
     )
     active = fields.Boolean(
         default=True
     )
+
+    def compute_company_id(self):
+        """
+        This method computes a company_id
+        """
+        for record in self:
+            record.company_id = record.env.company
