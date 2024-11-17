@@ -13,5 +13,5 @@ class TransportDeliveriesCarrier(models.Model):
         string="Is Carrier",
         help="The partner is a carrier",
         default=False,
-        required=True,
+        # required=True,
     )

@@ -13,5 +13,5 @@ class TransportDeliveriesContactPerson(models.Model):
         string="Is Carrier Contact Person",
         help="The partner is a carrier contact person (manager or transport driver)",
         default=False,
-        required=True,
+        # required=True,
     )

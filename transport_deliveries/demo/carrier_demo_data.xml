@@ -7,22 +7,14 @@
             <field name="complete_name">The Best Transport Company</field>
             <field name="commercial_company_name">The Best Transport Company</field>
             <field name="industry_id">8</field>
-            <field name="lang">uk_UA</field>
             <field name="vat">11223344</field>
-            <field name="commercial_partner_id">64</field>
             <field name="type">contact</field>
             <field name="street">Kyiv, Miry street, 25</field>
             <field name="email">the_best_transport_company@ukr.net</field>
-            <field name="email_normalized">the_best_transport_company@ukr.net</field>
             <field name="phone">111-222-333</field>
             <field name="mobile">095-652-88-22</field>
             <field name="is_company">True</field>
             <field name="partner_share">True</field>
-            <field name="partner_gid">0</field>
-            <field name="invoice_warn">no-message</field>
-            <field name="sale_warn">no-message</field>
-            <field name="supplier_rank">0</field>
-            <field name="customer_rank">0</field>
             <field name="is_carrier">True</field>
         </record>
 
@@ -31,22 +23,14 @@
             <field name="complete_name">European Transport Company</field>
             <field name="commercial_company_name">European Transport Company</field>
             <field name="industry_id">8</field>
-            <field name="lang">uk_UA</field>
             <field name="vat">24569870</field>
-            <field name="commercial_partner_id">64</field>
             <field name="type">contact</field>
             <field name="street">Kyiv, Amosova street, 120</field>
             <field name="email">european_transport_company@ukr.net</field>
-            <field name="email_normalized">european_transport_company@ukr.net</field>
             <field name="phone">856-000-111</field>
             <field name="mobile">098-123-66-00</field>
             <field name="is_company">True</field>
             <field name="partner_share">True</field>
-            <field name="partner_gid">0</field>
-            <field name="invoice_warn">no-message</field>
-            <field name="sale_warn">no-message</field>
-            <field name="supplier_rank">0</field>
-            <field name="customer_rank">0</field>
             <field name="is_carrier">True</field>
         </record>
 
@@ -55,22 +39,14 @@
             <field name="complete_name">Railway Transport Company</field>
             <field name="commercial_company_name">Railway Transport Company</field>
             <field name="industry_id">8</field>
-            <field name="lang">uk_UA</field>
             <field name="vat">45671122</field>
-            <field name="commercial_partner_id">64</field>
             <field name="type">contact</field>
             <field name="street">Dnipro, Velika street, 50</field>
             <field name="email">railway_transport_company@ukr.net</field>
-            <field name="email_normalized">railway_transport_company@ukr.net</field>
             <field name="phone">133-466-001</field>
             <field name="mobile">098-888-23-08</field>
             <field name="is_company">True</field>
             <field name="partner_share">True</field>
-            <field name="partner_gid">0</field>
-            <field name="invoice_warn">no-message</field>
-            <field name="sale_warn">no-message</field>
-            <field name="supplier_rank">0</field>
-            <field name="customer_rank">0</field>
             <field name="is_carrier">True</field>
         </record>
 
@@ -79,22 +55,14 @@
             <field name="complete_name">Sea Transport Company</field>
             <field name="commercial_company_name">Sea Transport Company</field>
             <field name="industry_id">8</field>
-            <field name="lang">uk_UA</field>
             <field name="vat">45671122</field>
-            <field name="commercial_partner_id">64</field>
             <field name="type">contact</field>
             <field name="street">Odessa, Deribasivska street, 1</field>
             <field name="email">sea_transport_company@ukr.net</field>
-            <field name="email_normalized">sea_transport_company@ukr.net</field>
             <field name="phone">567-598-222</field>
             <field name="mobile">093-398-37-89</field>
             <field name="is_company">True</field>
             <field name="partner_share">True</field>
-            <field name="partner_gid">0</field>
-            <field name="invoice_warn">no-message</field>
-            <field name="sale_warn">no-message</field>
-            <field name="supplier_rank">0</field>
-            <field name="customer_rank">0</field>
             <field name="is_carrier">True</field>
         </record>
 
