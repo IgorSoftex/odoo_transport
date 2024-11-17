@@ -6,6 +6,12 @@
         <field name="model">transport.deliveries.transport.order</field>
         <field name="arch" type="xml">
             <tree>
+                <header>
+                    <button name="%(transport_deliveries.transport_order_report_act_window)d"
+                            string="Transport Order Report"
+                            type="action"
+                            display="always"/>
+                </header>
                 <field name="order_date"/>
                 <field name="delivery_date"/>
                 <field name="transport_type"/>

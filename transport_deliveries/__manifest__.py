@@ -20,6 +20,7 @@
         'security/transport_deliveries_access_groups.xml',
         'security/transport_deliveries_rules.xml',
         'security/ir.model.access.csv',
+        'wizard/transport_deliveries_transport_order_report_wizard_view.xml',
         'views/transport_deliveries_menu.xml',
         'views/transport_deliveries_transport_views.xml',
         'views/transport_deliveries_transportation_category_views.xml',
@@ -28,6 +29,7 @@
         'views/transport_deliveries_carrier_contact_person_views.xml',
         'views/transport_deliveries_transport_order_views.xml',
         'views/transport_deliveries_transport_order_line_views.xml',
+        'report/transport_deliveries_transport_order_report.xml',
     ],
 
     'demo': [

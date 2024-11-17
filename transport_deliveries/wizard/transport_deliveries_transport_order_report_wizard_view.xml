@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="transport_deliveries_transport_order_report_form_view" model="ir.ui.view">
+            <field name="name">transport.deliveries.transport.order.report.form</field>
+            <field name="model">transport.deliveries.transport.order.report.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Transport Order Report">
+                    <group>
+                        <group>
+                            <field name="begin_date"
+                                   string="Period:"
+                                   widget="daterange"
+                                   options="{'end_date_field': 'end_date'}"/>
+                            <field name="end_date"
+                                   invisible="1"/>
+                        </group>
+                            <field name="transport_type"
+                                   widget="statusbar"
+                                   options="{'clickable': '1'}"/>
+                        <group>
+                        </group>
+                    </group>
+                    <footer>
+                        <button string="Run Report"
+                                name="run_transport_order_report"
+                                type="object"
+                                class="btn-primary"
+                                data-hotkey="d"/>
+                        <button string="Cancel"
+                                class="btn-secondary"
+                                special="cancel"
+                                data-hotkey="x"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="transport_order_report_act_window" model="ir.actions.act_window">
+            <field name="name">Transport Order Report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">transport.deliveries.transport.order.report.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="transport_deliveries_transport_order_report_form_view"/>
+            <field name="target">new</field>
+            <field name="binding_model_id" ref="model_transport_deliveries_transport_order"/>
+            <field name="binding_view_types">list</field>
+        </record>
+
+    </data>
+</odoo>
