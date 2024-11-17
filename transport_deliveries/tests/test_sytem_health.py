@@ -1,5 +1,5 @@
 from odoo.addons.transport_deliveries.tests.common import TestCommon
-from odoo.tests import tagged, users
+from odoo.tests import tagged
 
 
 @tagged('post_install', '-at_install')

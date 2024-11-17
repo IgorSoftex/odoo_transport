@@ -33,13 +33,13 @@
     ],
 
     'demo': [
-    'demo/vehicle_brand_demo_data.xml',
-    'demo/transportation_category_demo_data.xml',
-    'demo/transport_demo_data.xml',
-    'demo/carrier_demo_data.xml',
-    'demo/carrier_contact_person_demo_data.xml',
-    'demo/transport_order_demo_data.xml',
-    'demo/transport_order_line_demo_data.xml',
+        'demo/vehicle_brand_demo_data.xml',
+        'demo/transportation_category_demo_data.xml',
+        'demo/transport_demo_data.xml',
+        'demo/carrier_demo_data.xml',
+        'demo/carrier_contact_person_demo_data.xml',
+        'demo/transport_order_demo_data.xml',
+        'demo/transport_order_line_demo_data.xml',
     ],
 
     'installable': True,

@@ -1,4 +1,3 @@
-from datetime import datetime
 from odoo.addons.transport_deliveries.tests.common import TestCommon
 from odoo.tests import tagged, users
 from odoo.exceptions import AccessError
